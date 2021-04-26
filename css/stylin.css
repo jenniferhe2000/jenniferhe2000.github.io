@@ -1,0 +1,334 @@
+
+/*!
+ * Start Bootstrap - Scrolling Nav (https://startbootstrap.com/template-overviews/scrolling-nav)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/blob/master/LICENSE)
+ */
+
+@import url('https://fonts.googleapis.com/css?family=DM Sans:100,200,300,400,500,600,700,800');
+@import url('https://fonts.googleapis.com/css?family=Libre Baskerville:100,200,300,400,500,600,700,800');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:100,200,300,400,500,600,700,800');
+
+html {
+}
+
+#page {
+    background-color: #0B0A46;
+}
+
+#project {
+    padding-top: 100px;
+    padding-bottom: 20px;
+    background-color: white;
+    color: #9D4200;
+}
+
+#oanda {
+    padding-top: 100px;
+    padding-bottom: 20px;
+    background-color: white;
+    color: #9D4200;
+}
+
+#about {
+    background-color: white;
+    color: #9D4200;
+}
+
+#top {
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+
+section {
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+nav {
+	font-family: Inconsolata;
+	z-index: 9999;
+	position: sticky;
+	top: 0;
+}
+
+.navbar-dark {
+  background-color: transparent;
+}
+
+/* nav-link */
+.navbar-dark .navbar-nav .nav-link {
+    font-weight: 400;
+    font-size: 12px;
+    text-decoration: none;
+    background-color: transparent;
+    border-bottom: none;
+    color: white;
+}
+
+/* hover on nav-link */
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #FF4141;
+    font-weight: 400;
+    border-bottom: none;
+}
+
+/* active link */
+.navbar-dark .navbar-nav .active .nav-link {
+    color: #FF4141;
+    font-weight: 800;
+    border-bottom: none;
+}
+
+/* logo */
+.navbar-dark .navbar-brand {
+    border-bottom: none;
+}
+
+/* logo */
+.navbar-dark .navbar-brand:hover {
+    border-bottom: none;
+}
+
+/* LIGHT */
+.navbar-light {
+  background-color: transparent;
+}
+
+/* nav-link */
+.navbar-light .navbar-nav .nav-link {
+    font-weight: 400;
+    font-size: 12px;
+    text-decoration: none;
+    background-color: transparent;
+    border-bottom: none;
+    color: #C4C4C4;
+}
+
+/* hover on nav-link */
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #333333;
+    font-weight: 400;
+    border-bottom: none;
+}
+
+/* active link */
+.navbar-light .navbar-nav .active .nav-link {
+    color: #333333;
+    font-weight: 800;
+    border-bottom: none;
+}
+
+/* logo */
+.navbar-light .navbar-brand {
+    border-bottom: none;
+}
+
+/* logo */
+.navbar-light .navbar-brand:hover {
+    border-bottom: none;
+}
+
+img {
+	image-orientation: from-image;
+}
+
+section h1 {
+	font-family: Inconsolata;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 44px;
+	color: white;
+}
+
+section h2 {
+    font-family: DM Sans;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: white;
+    text-transform: uppercase;
+}
+
+section h3 {
+    font-family: Inconsolata;
+    font-weight: 600;
+    font-size: 36px;
+    color: white;
+}
+
+section h4 {
+    font-family: DM Sans;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+}
+
+section h5 {
+    font-family: Inconsolata;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+}
+
+section p {
+    font-family: DM Sans;
+    font-weight: 100;
+    font-size: 16px;
+    color: white;
+}
+
+a {
+	font-family: Inconsolata;
+    color: #FF4141;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FF4141;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+ol {
+    padding-left: 15px;
+}
+
+ul {
+    padding-left: 15px;
+}
+
+
+li {
+    color: #333;
+    font-size: 14px;
+}
+
+#renu h1 {
+    color: #371E37;
+}
+
+#renu h2 {
+    color: #371E37;
+}
+
+#renu h3 {
+    color: #371E37;
+}
+
+#renu h4 {
+    color: #371E37;
+}
+
+#renu p {
+    color: #371E37;
+}
+
+#renu a {
+    color: #371E37;
+}
+
+#project a:hover {
+    color: #371E37;
+}
+
+#oanda h1 {
+    color: #333E49;
+}
+
+#oanda h2 {
+    color: #333E49;
+}
+
+#oanda h3 {
+    color: #333E49;
+}
+
+#oanda h4 {
+    color: #333E49;
+}
+
+#oanda p {
+    color: #333E49;
+}
+
+#oanda a {
+    color: #333E49;
+}
+
+#oanda a:hover {
+    color: #333E49;
+}
+
+#triyo h1 {
+    color: #0B0A46;
+}
+
+#triyo h2 {
+    color: #0B0A46;
+}
+
+#triyo h3 {
+    color: #0B0A46;
+}
+
+#triyo h4 {
+    color: #0B0A46;
+}
+
+#triyo p {
+    color: #0B0A46;
+}
+
+#triyo a {
+    color: #0B0A46;
+}
+
+.text-secondary {
+    color: #333E49!important;
+}
+
+.numberCircle {
+
+    background-color: white;
+    border: red;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    padding: 8px;
+    
+    color: #333;
+    text-align: center;
+
+    font: 16px Inconsolata;
+    font-weight: 600;
+}
+
+.table p {
+    padding-top: 16px;
+}
+
+.mark, mark {
+    padding: 0px;
+    background-color: #F2DAC8;
+}
+
+b, strong {
+    font-weight: 800;
+}
+
+.grow { 
+    transition: all .2s ease-in-out; 
+}
+
+.grow:hover { 
+    transform: scale(1.05); 
+}
+
+
+
+
+
