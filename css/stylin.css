@@ -16,7 +16,7 @@ html {
     background-color: #0B0A46;
 }
 
-#project {
+#case-study {
     padding-top: 100px;
     padding-bottom: 20px;
     background-color: white;
@@ -107,14 +107,14 @@ nav {
 
 /* hover on nav-link */
 .navbar-light .navbar-nav .nav-link:hover {
-    color: #333333;
+    color: #FF4141;
     font-weight: 400;
     border-bottom: none;
 }
 
 /* active link */
 .navbar-light .navbar-nav .active .nav-link {
-    color: #333333;
+    color: #FF4141;
     font-weight: 800;
     border-bottom: none;
 }
@@ -134,15 +134,15 @@ img {
 }
 
 section h1 {
-	font-family: Inconsolata;
-    font-weight: 300;
-    font-size: 36px;
-    line-height: 44px;
+	font-family: DM Sans;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 64px;
 	color: white;
 }
 
 section h2 {
-    font-family: DM Sans;
+    font-family: Inconsolata;
     font-weight: 600;
     font-size: 16px;
     letter-spacing: 1px;
@@ -151,9 +151,10 @@ section h2 {
 }
 
 section h3 {
-    font-family: Inconsolata;
+    font-family: DM Sans;
     font-weight: 600;
     font-size: 24px;
+    line-height: 36px;
     color: white;
 }
 
@@ -207,28 +208,24 @@ li {
     font-size: 14px;
 }
 
-#renu h1 {
-    color: #371E37;
+#case-study h1 {
+    color: #0B0A46;
 }
 
-#renu h2 {
-    color: #371E37;
+#case-study h2 {
+    color: #0B0A46;
 }
 
-#renu h3 {
-    color: #371E37;
+#case-study h3 {
+    color: #FF4141;
 }
 
-#renu h4 {
-    color: #371E37;
+#case-study h4 {
+    color: #FF4141;
 }
 
-#renu p {
-    color: #371E37;
-}
-
-#renu a {
-    color: #371E37;
+#case-study p {
+    color: #0B0A46;
 }
 
 #project a:hover {
@@ -305,6 +302,10 @@ li {
 
     font: 16px Inconsolata;
     font-weight: 600;
+}
+
+.vertical-line {
+  border-left: thick solid #FF4141;
 }
 
 .table p {
