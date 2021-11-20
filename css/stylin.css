@@ -41,7 +41,7 @@
    right: 0;
    bottom: 0;
    display: block;
-   background: url('/img/clouds.png');
+   background: url('clouds.png');
    background-size: cover;
    z-index: 0;
    transform: translateZ(-4px) scale(2.2);
