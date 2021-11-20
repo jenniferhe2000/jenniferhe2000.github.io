@@ -49,10 +49,7 @@
  
  header div {
    z-index: 1;
-   display: flex;
-   padding-top: 6vh;
-   justify-content: center;
-   align-items: center;
+   padding-top: 60px;
    transform: translateZ(-2px);
  }
  
