@@ -49,7 +49,7 @@
  
  header div {
    z-index: 1;
-   padding-top: 60px;
+   padding-top: 8vh;
    transform: translateZ(-2px);
  }
  
@@ -163,6 +163,10 @@
  
  img {
    image-orientation: from-image;
+ }
+
+ .title {
+  font-size: 2.2em;
  }
  
  h1 {
