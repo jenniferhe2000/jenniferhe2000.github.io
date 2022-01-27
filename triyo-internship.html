@@ -64,7 +64,7 @@
             <div class="row text-left py-5">
                 <div class="col-12 vertical-line">
                     <h3 class="pl-3">Triyo file collaboration</h3>
-                    <h2 class="pl-3">Centralizing task management processes for assignees</h2>
+                    <h2 class="pl-3">Centralizing file collaboration task management for editors</h2>
                 </div>
             </div>
             <div class="row text-left pt-5">
@@ -104,46 +104,40 @@
         <div class="container">
             <div class="row text-left">
                 <div class="col-12">
-                    <h4 class="pb-2">Context</h4>
-                    <p>Triyo is a Toronto-based startup that builds project and task management software catered to users in the finance industry. By integrating the Microsoft Suite into their software, Triyo allows project teams to collaborate on files
-                        without excessive change management. A <span style="font-weight:600">file collaboration task</span> is created when project managers assign different sections of a Word document to team members to edit or approve.</p>
+                    <h4 class="pb-2">The company</h4>
+                    <p>Triyo builds online task management software with Microsoft integrations. A <span class="mark">file collaboration task</span> is created when project managers assign different sections of a Microsoft Word file for team members to edit.
+                    </p>
                 </div>
             </div>
         </div>
-    </section> 
+    </section>
+
+    <section class="pb-3">
+        <div class="container">
+            <div class="row text-left">
+                <div class="col-12">
+                    <h4 class="pb-2">Context</h4>
+                    <p>The company newly developed a Microsoft Word add-in, so that editors could edit their sections offline, within the Microsoft Word application itself.</p>
+                </div>
+            </div>
+            <div class="row text-left py-5">
+                <div class="col-12 vertical-line">
+                    <h2 class="pl-3">The web application will only be used to view details of the file collaboration task. To edit the file, the editor must use Microsoft Word.</h2>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section class="pb-5">
         <div class="container">
             <div class="row text-left">
                 <div class="col-12 col-md-8">
-                    <h4 class="pb-3">Business goals</h4>
+                    <h4 class="pb-3">Business goal</h4>
                 </div>
             </div>
-            <div class="row text-left pb-5">
-                <div class="col-12 col-md-4 pb-3">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <p class="card-text">Currently, project managers upload Word documents to the Triyo web application and assign sections that assignees edit in an <span style="font-weight:600">online editor.</span></p>
-                            <p class="card-text">The company newly developed a Microsoft Word add-in, which was intended for assignees to edit their sections <span style="font-weight:600">offline.</span></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 pb-3">
-                    <div class="card h-100">
-                        <img class="card-img-top" src="img/triyo/expensive.svg">
-                        <div class="card-body">
-                            <p class="card-text">The code used support the online editor was <span style="font-weight:600">expensive</span> and difficult to maintain.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 pb-3">
-                    <div class="card card-dark h-100">
-                        <img class="card-img-top" src="img/triyo/wifi_off.svg">
-                        <div class="card-body">
-                            <p class="card-text"><span style="color: #fff;">Stakeholders wanted to direct assignees to the newly built Microsoft Word add-in. The assignee would edit documents offline and the company would
-									remove the online editor from the application.</span></p>
-                        </div>
-                    </div>
+            <div class="row text-left pt-3 pb-5">
+                <div class="col-12 vertical-line">
+                    <h2 class="pl-3">Accustom web application users to the new file collaboration task workflow.</h2>
                 </div>
             </div>
         </div>
@@ -156,7 +150,7 @@
                     <h4 class="pb-3">My task</h4>
                 </div>
                 <div class="col-12">
-                    <h2>How might we redesign the online file collaboration experience to help assignees understand task requirements before they move offline to edit?</h2>
+                    <h2>Redesign the web file collaboration experience to help editors understand the details of their task before they begin editing on MS Word.</h2>
                 </div>
             </div>
         </div>
@@ -178,21 +172,20 @@
         <div class="container">
             <div class="row text-left pb-5">
                 <div class="col-12 col-md-4">
+                    <h4 class="pb-2">File previews</h4>
+                    <p>File previews present the file at different stages. The editor can view the original file, the section of the file assigned to him, and any changes made to the file by himself or other team members.</p>
+                </div>
+                <div class="col-12 offset-md-1 col-md-7">
+                    <img class="w-100 img-fluid" src="img/triyo/tabular-nav.svg">
+                </div>
+            </div>
+            <div class="row text-left pt-5">
+                <div class="col-12 col-md-4">
                     <h4 class="pb-2">Audit trail</h4>
                     <p>The audit trail lists any task-related activity and comments left by other team members.</p>
                 </div>
                 <div class="col-12 offset-md-1 col-md-7">
                     <img class="w-100 img-fluid" src="img/triyo/tasks-page.svg">
-                </div>
-            </div>
-            <div class="row text-left pt-5">
-                <div class="col-12 col-md-4">
-                    <h4 class="pb-2">Document previews</h4>
-                    <p>Document previews present the document at different stages. The assignee can view the original document,
-                        the section of the document assigned to him, and any changes made to the document by himself or other team members.</p>
-                </div>
-                <div class="col-12 offset-md-1 col-md-7">
-                    <img class="w-100 img-fluid" src="img/triyo/tabular-nav.svg">
                 </div>
             </div>
         </div>
@@ -217,24 +210,26 @@
             </div>
             <div class="row text-left pb-3">
                 <div class="col-12">
-                    <p>After talking to stakeholders to have a better understanding of the problem space, I assumed the assignee would need to accomplish two goals to understand task requirements.</span>
+                    <p>After talking to stakeholders to have a better understanding of the problem space, I assumed the editor would need to accomplish two goals to understand the details of his task.</span>
                     </p>
                 </div>
             </div>
             <div class="row text-left">
-                <div class="col-12 col-md-6 pb-3">
+                <div class="col-6 pb-3">
                     <div class="card h-100">
                         <div class="card-body">
                             <h1 class="card-text">1.</h1>
-                            <p class="card-text">A task will have several collaborators. The assignee needs to understand his part of the task in relation to his team members'.</p>
+                            <h4>A file will have several collaborators</h4>
+                            <p class="card-text">The editor needs to understand his part of the task in relation to other editors working on the same file.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 pb-3">
+                <div class="col-6 pb-3">
                     <div class="card h-100">
                         <div class="card-body">
                             <h1 class="card-text">2.</h1>
-                            <p class="card-text">The assignee needs to communicate with his team members to seek clarity on task requirements or ask for support.</p>
+                            <h4>Editors will need to communicate with team members</h4>
+                            <p class="card-text">The editor needs to communicate with team members to seek clarity on task requirements or ask for support.</p>
                         </div>
                     </div>
                 </div>
@@ -246,12 +241,12 @@
         <div class="container">
             <div class="row text-left">
                 <div class="col-12 col-md-8">
-                    <h4 class="pb-3">Assignee journey map</h4>
+                    <h4 class="pb-3">Journey map</h4>
                 </div>
             </div>
             <div class="row text-left pb-3">
                 <div class="col-12">
-                    <p>The journey map outlines how the user can use Triyosoft's web application to accomplish these goals.
+                    <p>The journey map outlines how the editor can use Triyosoft's web application to accomplish these goals.
                     </p>
                 </div>
             </div>
@@ -275,25 +270,20 @@
 
     <section class="pb-5">
         <div class="container">
-            <div class="row text-left pb-3">
+            <div class="row text-left">
                 <div class="col-12">
-                    <h4 class="pb-2">Current state heuristic analysis</h4>
+                    <h4 class="pb-2">Current state workflow analysis</h4>
                     <p>In the current state of the web application, tasks are listed in rows on a table. The assignee clicks on action icons in the row to view dropdown selections for task details.</p>
                 </div>
             </div>
-            <div class="row text-left pb-5">
+            <div class="row text-left py-5">
                 <div class="col-12">
-                    <img class="img-fluid w-100" src="img/triyo/current-state.svg">
+                    <img class="img-fluid w-100" src="img/triyo/current-state-dropdown.svg">
                 </div>
             </div>
             <div class="row text-left py-5">
                 <div class="col-12">
                     <img class="img-fluid w-100" src="img/triyo/current-state-audit.svg">
-                </div>
-            </div>
-            <div class="row text-left pt-5">
-                <div class="col-12">
-                    <img class="img-fluid w-100" src="img/triyo/current-state-dropdown.svg">
                 </div>
             </div>
         </div>
@@ -304,24 +294,26 @@
             <div class="row text-left pb-3">
                 <div class="col-12">
                     <h4 class="pb-2">Pain points</h4>
-                    <p>There are two major pain points with this user journey.</p>
+                    <p>There are two major pain points in the current workflow that hinder the editor's goals.</p>
                 </div>
             </div>
             <div class="row text-left pb-3">
                 <div class="col-12 col-md-6 mb-3">
                     <div class="card h-100">
                         <div class="card-body">
-                            <h4 class="pb-2">Repetitive actions</h4>
-                            <p>An overreliance on modals creates a disjointed user experience. It is difficult to obtain a coherent understanding of the task.
-                            </p>
+                            <h1 class="card-text">1.</h1>
+                            <h4 class="pb-2">Poor accessibility to information that provides context</h4>
+                            <p>It is difficult for editors to understand their part of the task in relation to collaborators when information is hidden in dropdowns or in-between modals.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 mb-3">
                     <div class="card h-100">
                         <div class="card-body">
-                            <h4 class="pb-2">Poor accessibility to information</h4>
-                            <p>Information is hidden in dropdowns or in-between modals.</p>
+                            <h1 class="card-text">2.</h1>
+                            <h4 class="pb-2">Repetitive actions are required to communicate with collaborators</h4>
+                            <p>An overreliance on modals creates a disjointed user experience. It is difficult to obtain a coherent understanding of the task.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -344,27 +336,28 @@
             <div class="row text-left">
                 <div class="col-12 col-md-4 pb-3">
                     <div class="card card-dark h-100">
-                        <img class="card-img-top" src="img/triyo/repeat.svg">
                         <div class="card-body">
-                            <p class="card-text"><span style="color: #fff;">Reduce repetitive actions so users can efficiently obtain context of their task.</span></p>
+                            <h1 class="card-text">1.</h1>
+                            <h4 class="pb-2">Improve access to contextual information</h4>
+                            <p class="card-text"><span style="color: #fff;">It will be easier for editors to have a better understanding of their task in relation to other collaborators.</span></p>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-4 pb-3">
                     <div class="card card-dark h-100">
-                        <img class="card-img-top" src="img/triyo/remove_red_eye.svg">
                         <div class="card-body">
-                            <p class="card-text"><span style="color: #fff;">Improve access to task-related information so
-									users have a better understanding of their task.</span></p>
+                            <h1 class="card-text">2.</h1>
+                            <h4 class="pb-2">Reduce repetitive actions</h4>
+                            <p class="card-text"><span style="color: #fff;">It will be more efficient for editors communicate with other collaborators.</span></p>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-4 pb-3">
                     <div class="card card-dark h-100">
-                        <img class="card-img-top" src="img/triyo/show_chart.svg">
                         <div class="card-body">
-                            <p class="card-text"><span style="color: #fff;">Support scalability of the product as new
-									features are added.</span></p>
+                            <h1 class="card-text">3.</h1>
+                            <h4 class="pb-2">Support scalability of the product</h4>
+                            <p class="card-text"><span style="color: #fff;">New features will be added to file collaboration tasks in the future.</span></p>
                         </div>
                     </div>
                 </div>
@@ -386,7 +379,7 @@
         <div class="container">
             <div class="row text-left pb-3">
                 <div class="col-12">
-                <p>There are several functional components to a file collaboration task.</p>
+                    <p>There are several functional components to a file collaboration task.</p>
                 </div>
             </div>
             <div class="row text-left pb-5">
@@ -449,7 +442,7 @@
             </div>
             <div class="row text-left pb-5">
                 <div class="col-12">
-                <p>Grouping the functional components helped me determine a hierarchy, which would inform the navigational structure of my design options moving forward.</p>
+                    <p>Grouping the functional components helped me determine a hierarchy, which would inform the navigational structure of my design options moving forward.</p>
                 </div>
             </div>
             <div class="row text-left pb-5">
@@ -459,7 +452,7 @@
             </div>
         </div>
     </section>
-    
+
     <section style="background-color: #FFDFCD" class="py-5">
         <div class="container py-5">
             <div class="row text-left">
