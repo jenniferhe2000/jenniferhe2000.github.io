@@ -130,6 +130,14 @@ h5 {
     letter-spacing: 2px;
 }
 
+h6 {
+    font-family: Playfair Display;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 48px;
+    letter-spacing: 2px;
+}
+
 p {
     font-family: Helvetica;
     font-weight: 400;
