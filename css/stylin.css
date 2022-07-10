@@ -4,7 +4,7 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/blob/master/LICENSE)
  */
 
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,WONK@9..144,300,1;9..144,600,1&family=Raleway:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@800&display=swap');
 #homepage {
     width: 100%;
     height: 100%;
@@ -21,8 +21,7 @@ section {
 }
 
 body {
-    background-color: #F9F9F9;
-    color: #4A4A4A;
+    background-color: #F7F7F7;
 }
 
 nav {
@@ -34,18 +33,18 @@ nav {
 }
 
 .navbar-light {
-    background-color: #F9F9F9;
+    background-color: #F7F7F7;
 }
 
 
 /* nav-link */
 
 .navbar-light .navbar-nav .nav-link {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 500;
     font-size: 12px;
     text-decoration: none;
-    color: #4A4A4A;
+    color: #3C094F;
 }
 
 
@@ -53,7 +52,7 @@ nav {
 
 .navbar-light .navbar-nav .nav-link:hover {
     font-weight: 700;
-    color: #4A4A4A;
+    color: #EC0000;
 }
 
 
@@ -61,88 +60,102 @@ nav {
 
 .navbar-light .navbar-nav .active .nav-link {
     font-weight: 700;
-    color: #448E8E;
+    color: #EC0000;
 }
 
 h1 {
-    font-family: 'Fraunces', serif;
-    font-weight: 300;
+    font-family: 'Montserrat';
+    font-weight: 800;
     font-size: 64px;
     line-height: 88px;
+    color: #3C094F
 }
 
 h2 {
-    font-family: 'Fraunces', serif;
-    font-weight: 600;
-    font-size: 40px;
+    font-family: 'Montserrat';
+    font-weight: 800;
+    font-size: 32px;
     line-height: 48px;
+    color: #644B7D;
 }
 
 h3 {
-    font-family: 'Fraunces', serif;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 28px;
+    font-family: 'Montserrat';
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 56px;
+    color: #3C094F
 }
 
 h4 {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #644B7D;
 }
 
 h5 {
-    font-family: 'Fraunces', serif;
-    font-weight: 300;
-    font-size: 28px;
-    line-height: 40px;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #644B7D;
+}
+
+h6 {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #9689A3;
 }
 
 p {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
+    font-family: 'Inter';
+    font-weight: 400;
     font-size: 16px;
     line-height: 24px;
+    color: #644B7D;
+    margin-bottom: 0px;
 }
 
 a {
     font-weight: 600;
-    color: #448E8E;
+    color: #EC0000;
 }
 
 a:hover {
     font-weight: 600;
-    color: #448E8E;
+    color: #EC0000;
     text-decoration: underline;
 }
 
-ol {
-    padding-left: 15px;
-}
-
 ul {
-    padding-left: 15px;
+    padding-left: 32px;
 }
 
 li {
-    color: #1B360A;
-    font-size: 14px;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #644B7D;
+}
+
+#feature {
+    border-radius: 8px;
+    transition: .2s ease-in-out;
 }
 
 .img-wrap {
     position: relative;
 }
 
-#feature {
-    border: 1px solid #EEEEEE;
-    border-radius: 8px;
-    transition: .2s ease-in-out;
-}
-
 .img-description {
     position: absolute;
-    top: 10%;
+    top: 20%;
     left: 3%;
     color: #4A4A4A;
     visibility: hidden;
@@ -151,7 +164,7 @@ li {
 }
 
 .img-wrap:hover #feature {
-    opacity: 0.2;
+    opacity: 0.1;
     box-shadow: 4px 4px 20px rgba(190, 190, 190);
 }
 
@@ -160,39 +173,14 @@ li {
     opacity: 1;
 }
 
-.vertical-line {
-    border-left: 4px solid #448E8E;
-}
-
-.horizontal-line {
-    border-bottom: solid 1px #DDDDDD;
-}
-
-.card {
-    display: block;
-    border: 1px solid #EEEEEE;
-    border-radius: 8px;
-    padding: 48px 32px 48px 32px;
-}
-
-.card-text {
-    margin-bottom: 0px;
-    display: inline-block;
-}
-
 .bg-gray {
-    background-color: #F9F9F9;
+    background-color: #F0F0F0;
+    padding: 64px 48px 64px 48px;
     border-radius: 8px;
-    padding: 16px;
-}
-
-.card-img-left {
-    display: inline;
-    margin-right: 16px;
 }
 
 .heart {
-    background-color: #C91E28;
+    background-color: #EC0000;
     display: inline-block;
     width: 32px;
     height: 32px;
@@ -207,7 +195,7 @@ li {
 .heart:before,
 .heart:after {
     content: "";
-    background-color: #C91E28;
+    background-color: #EC0000;
     border-radius: 50%;
     height: 32px;
     position: absolute;
