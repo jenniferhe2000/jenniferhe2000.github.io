@@ -1,225 +1,338 @@
-/*!
+    /*!
  * Start Bootstrap - Scrolling Nav (https://startbootstrap.com/template-overviews/scrolling-nav)
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/blob/master/LICENSE)
  */
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Lora:ital,wght@0,400;0,600;0,700;1,500;1,700&display=swap');
-#homepage {
-    width: 100%;
-    height: 100%;
-}
-
-header {
-    padding-top: 80px;
-    padding-bottom: 48px;
-}
-
-section {
-    padding-top: 48px;
-    padding-bottom: 48px;
-}
-
-body {
-    background-color: #F7F8FA;
-}
-
-nav {
-    z-index: 9999;
-    position: sticky !important;
-    right: 0;
-    left: 0;
-    top: 0;
-}
-
-.navbar-light {
-    background-color: #F7F8FA;
-}
-
-
-/* nav-link */
-
-.navbar-light .navbar-nav .nav-link {
-    font-family: 'Helvetica Neue';
-    font-weight: 400;
-    font-size: 12px;
-    text-decoration: underline;
-    color: #203553;
-}
-
-
-/* nav-link: hover */
-
-.navbar-light .navbar-nav .nav-link:hover {
-    color: #203553;
-    background-color: none;
-}
-
-
-/* nav-link: active */
-
-.navbar-light .navbar-nav .active .nav-link {
-    text-decoration: none;
-    font-weight: 700;
-    color: #A91700;
-}
-
-h1 {
-    font-family: 'Lora';
-    font-style: italic;
-    font-weight: 400;
-    font-size: 64px;
-    line-height: 88px;
-    color: #203553;
-    overflow: hidden;
-}
-
-h2 {
-    font-family: 'Helvetica Neue';
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 44px;
-    color: #203553;
-}
-
-h3 {
-    font-family: 'Lora';
-    font-style: italic;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 48px;
-    color: #203553;
-}
-
-h4 {
-    font-family: 'Helvetica Neue';
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 32px;
-    color: #203553;
-}
-
-h5 {
-    font-family: 'Helvetica Neue';
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 40px;
-    color: #203553;
-}
-
-h6 {
-    font-family: 'Helvetica Neue';
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 16px;
-    color: #203553;
-    letter-spacing: 0.25px;
-    text-transform: uppercase;
-}
-
-h7 {
-    font-family: 'Lora';
-    font-style: italic;
-    font-weight: 400;
-    font-size: 48px;
-    color: #203553;
-    width: 100%;
-    border-bottom: 2px solid #203553;
-    line-height: 0.1em;
-    margin: 10px 0 20px;
-}
-
-h7 span {
-    background: #F7F8FA;
-    padding: 0 48px 0 15px;
-}
-
-p {
-    font-family: 'Helvetica Neue';
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 32px;
-    color: #203553;
-    margin-bottom: 0px;
-}
-
-a {
-    font-weight: 400;
-    color: #203553;
-    text-decoration: underline;
-}
-
-a:hover {
-    color: #A91700;
-}
-
-a.nav-link:hover {
-    color: #A91700 !important;
-}
-
-.btn {
-    font-family: 'Helvetica Neue';
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 16px;
-    color: #A91700;
-    padding: 16px;
-}
-
-.btn-outline-primary {
-    color: #A91700;
-    background-color: #F7F8FA;
-    border-color: #A91700;
-    border-radius: 0px;
-}
-
-.btn-outline-primary:hover {
-    color: #A91700;
-    background-color: #FFFFFF;
-    border-color: #A91700;
-}
-
-.btn-outline-primary:not(:disabled):not(.disabled):active {
-    color: #203553;
-    background-color: #F0F4FC;
-    border-color: #203553;
-}
-
-.btn-outline-primary.focus,
-.btn-outline-primary:focus {
-    box-shadow: 0 0 0 0;
-}
-
-.horizontal-line {
-    border-top: 2px solid #203553;
-}
-
-ul {
-    padding-left: 24px;
-}
-
-ol {
-    padding-left: 24px;
-}
-
-li {
-    font-family: 'Helvetica Neue';
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 40px;
-    color: #203553;
-}
-
-#photograph {
-    border: 56px solid white;
-}
-
-.bg-gray {
-    background-color: #EFF1F4;
-    padding: 56px 64px;
-}
-
-.bg-blue {
-    background-color: #203553;
-    padding: 56px 64px;
-}
+    
+    @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+    @font-face {
+        font-family: 'AddingtonCFRegular';
+        src: url('assets/addingtoncf-regular-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: 'AddingtonCFRegularItalic';
+        src: url('assets/addingtoncf-regularitalic-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: italic;
+    }
+    
+    @font-face {
+        font-family: 'AddingtonCFBold';
+        src: url('assets/addingtoncf-bold-webfont.woff') format('woff');
+        font-weight: bold;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: 'AddingtonCFExtraBold';
+        src: url('assets/addingtoncf-extrabold-webfont.woff') format('woff');
+        font-weight: bolder;
+        font-style: normal;
+    }
+    /* SECTIONS */
+    
+    #homepage {
+        width: 100%;
+        height: 100%;
+    }
+    
+    header {
+        padding-top: 88px;
+        padding-bottom: 88px;
+    }
+    
+    section {
+        padding-top: 128px;
+        padding-bottom: 128px;
+    }
+    
+    .section-light {
+        background-color: #D7FF39;
+        color: black;
+    }
+    
+    .section-dark {
+        background-color: black;
+        color: #D7FF39;
+    }
+    
+    body {
+        background-color: white;
+    }
+    /* NAVIGATION */
+    
+    nav {
+        z-index: 9999;
+        position: sticky !important;
+        right: 0;
+        left: 0;
+        top: 0;
+    }
+    
+    .navbar-light {
+        background-color: white;
+    }
+    
+    .navbar-light .navbar-nav .nav-link {
+        font-family: 'Libre Franklin';
+        font-weight: 400;
+        font-size: 12px;
+        text-decoration: underline;
+        color: #2704FF;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    
+    .navbar-light .navbar-nav .nav-link:hover {
+        color: black;
+        background-color: none;
+    }
+    
+    .navbar-light .navbar-nav .active .nav-link {
+        text-decoration: none;
+        font-weight: 700;
+        color: black;
+    }
+    /* TYPOGRAPHY */
+    
+    h1 {
+        font-family: 'AddingtonCFExtraBold';
+        font-weight: bolder;
+        font-size: 64px;
+        line-height: 72px;
+    }
+    
+    h2 {
+        font-family: 'AddingtonCFRegular';
+        font-weight: normal;
+        font-size: 40px;
+        line-height: 48px;
+    }
+    
+    h3 {
+        font-family: 'AddingtonCFBold';
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 40px;
+    }
+    
+    h4 {
+        font-family: 'Libre Franklin';
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+    }
+    
+    h5 {
+        font-family: 'Libre Franklin';
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 36px;
+    }
+    
+    h6 {
+        font-family: 'Libre Franklin';
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    
+    h7 {
+        font-family: 'AddingtonCFRegularItalic';
+        font-weight: normal;
+        font-size: 40px;
+        line-height: 48px;
+    }
+    
+    h8 {
+        font-family: 'Libre Franklin';
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 16px;
+    }
+    
+    p {
+        font-family: 'Libre Franklin';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 0px;
+    }
+    
+    #white {
+        color: white;
+    }
+    
+    #gray {
+        color: #A8AC8B;
+    }
+    
+    a {
+        color: #2704FF;
+        text-decoration: underline;
+    }
+    
+    a:hover {
+        color: black;
+        text-decoration: underline;
+    }
+    /* BUTTONS */
+    
+    .btn {
+        font-family: 'Libre Franklin';
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        padding: 16px;
+    }
+    /* Primary Button */
+    
+    .btn-outline-primary {
+        color: black;
+        background-color: none;
+        border-color: black;
+        border-radius: 0px;
+    }
+    
+    .btn-outline-primary:hover {
+        color: white;
+        background-color: black;
+        border-color: black;
+    }
+    
+    .btn-outline-primary:not(:disabled):not(.disabled):active {
+        color: white;
+        background-color: black;
+        border-color: black;
+    }
+    
+    .btn-outline-primary.focus,
+    .btn-outline-primary:focus {
+        box-shadow: 0 0 0 0;
+    }
+    /* Secondary Button */
+    
+    .btn-outline-secondary {
+        color: #D7FF39;
+        background-color: none;
+        border-color: #D7FF39;
+        border-radius: 0px;
+    }
+    
+    .btn-outline-secondary:hover {
+        color: black;
+        background-color: #D7FF39;
+        border-color: #D7FF39;
+    }
+    
+    .btn-outline-secondary:not(:disabled):not(.disabled):active {
+        color: black;
+        background-color: #D7FF39;
+        border-color: #D7FF39;
+    }
+    
+    .btn-outline-secondary.focus,
+    .btn-outline-secondary:focus {
+        box-shadow: 0 0 0 0;
+    }
+    /* TAGS */
+    
+    .tag {
+        display: inline-block;
+        padding: 8px 16px;
+        border-radius: 32px;
+    }
+    
+    .tag-light {
+        background-color: #D7FF39;
+        color: black;
+    }
+    
+    .tag-dark {
+        background-color: black;
+        color: white;
+    }
+    /* CARDS */
+    
+    .card {
+        font-family: 'Libre Franklin';
+        padding: 16px 24px;
+        border-radius: 0px;
+    }
+    
+    .card-light {
+        background-color: #D7FF39;
+        color: black;
+    }
+    
+    .card-dark {
+        background-color: black;
+        color: #D7FF39;
+    }
+    /* DIVIDER */
+    
+    .horizontal-line {
+        border-top: 1px solid black;
+    }
+    /* LISTS */
+    
+    ul {
+        padding-left: 24px;
+    }
+    
+    ol {
+        padding-left: 24px;
+    }
+    /* MOSAIC */
+    
+    .mosaic {
+        display: grid;
+    }
+    
+    .mosaic-item:first-of-type {
+        grid-column: 2 / span 3;
+        grid-row: 2 / span 3;
+    }
+    
+    .mosaic-item:nth-of-type(2) {
+        grid-column: 3 / span 3;
+        grid-row: 3 / span 3;
+    }
+    
+    .mosaic-item:last-of-type {
+        grid-column: 1 / span 3;
+        grid-row: 1 / span 3;
+    }
+    /* ANIMATION */
+    
+    .rotate {
+        animation: rotation 20s infinite linear;
+    }
+    
+    @keyframes rotation {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(359deg);
+        }
+    }
+    
+    .bounce {
+        animation: bounce 2s infinite linear;
+    }
+    
+    @keyframes bounce {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
