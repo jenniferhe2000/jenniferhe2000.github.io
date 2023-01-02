@@ -4,64 +4,39 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/blob/master/LICENSE)
  */
     
-    @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-    @font-face {
-        font-family: 'AddingtonCFRegular';
-        src: url('assets/addingtoncf-regular-webfont.woff') format('woff');
-        font-weight: normal;
-        font-style: normal;
-    }
+    @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,600;0,700;1,200;1,400&family=Newsreader:ital,opsz,wght@1,6..72,300&display=swap');
     
-    @font-face {
-        font-family: 'AddingtonCFRegularItalic';
-        src: url('assets/addingtoncf-regularitalic-webfont.woff') format('woff');
-        font-weight: normal;
-        font-style: italic;
-    }
-    
-    @font-face {
-        font-family: 'AddingtonCFBold';
-        src: url('assets/addingtoncf-bold-webfont.woff') format('woff');
-        font-weight: bold;
-        font-style: normal;
-    }
-    
-    @font-face {
-        font-family: 'AddingtonCFExtraBold';
-        src: url('assets/addingtoncf-extrabold-webfont.woff') format('woff');
-        font-weight: bolder;
-        font-style: normal;
-    }
     /* SECTIONS */
     
     #homepage {
         width: 100%;
         height: 100%;
     }
+
+    body {
+        background-color: #EEF0F2;
+        color: #4D4F5F;
+    }
     
     header {
         padding-top: 88px;
-        padding-bottom: 88px;
     }
     
     section {
         padding-top: 128px;
-        padding-bottom: 128px;
+        padding-bottom: 0px;
+    }
+
+    .divider {
+        padding-top: 128px;
+        padding-bottom: 0px;
+    }
+
+    footer {
+        padding-top: 128px;
+        padding-bottom: 144px;      
     }
     
-    .section-light {
-        background-color: #D7FF39;
-        color: black;
-    }
-    
-    .section-dark {
-        background-color: black;
-        color: #D7FF39;
-    }
-    
-    body {
-        background-color: white;
-    }
     /* NAVIGATION */
     
     nav {
@@ -73,210 +48,166 @@
     }
     
     .navbar-light {
-        background-color: white;
+        background-color: #EEF0F2;
     }
     
     .navbar-light .navbar-nav .nav-link {
-        font-family: 'Libre Franklin';
+        font-family: 'Archivo';
         font-weight: 400;
         font-size: 12px;
         text-decoration: underline;
-        color: #2704FF;
+        color: #5872CE;
         padding-left: 16px;
         padding-right: 16px;
     }
     
     .navbar-light .navbar-nav .nav-link:hover {
-        color: black;
+        color: #4D4F5F;
         background-color: none;
     }
     
     .navbar-light .navbar-nav .active .nav-link {
         text-decoration: none;
         font-weight: 700;
-        color: black;
+        color: #4D4F5F;
     }
     /* TYPOGRAPHY */
     
     h1 {
-        font-family: 'AddingtonCFExtraBold';
-        font-weight: bolder;
-        font-size: 64px;
-        line-height: 72px;
+        font-family: 'Newsreader';
+        font-style: italic;
+        font-weight: 300;
+        font-size: 72px;
+        line-height: 88px;
     }
     
     h2 {
-        font-family: 'AddingtonCFRegular';
-        font-weight: normal;
-        font-size: 40px;
-        line-height: 48px;
+        font-family: 'Newsreader';
+        font-style: italic;
+        font-weight: 300;
+        font-size: 48px;
+        line-height: 64px;
     }
     
     h3 {
-        font-family: 'AddingtonCFBold';
-        font-weight: bold;
+        font-family: 'Archivo';
+        font-style: italic;
+        font-weight: 200;
         font-size: 32px;
-        line-height: 40px;
+        line-height: 48px;
     }
     
     h4 {
-        font-family: 'Libre Franklin';
-        font-weight: 700;
+        font-family: 'Archivo';
+        font-weight: 400;
         font-size: 24px;
         line-height: 32px;
     }
     
     h5 {
-        font-family: 'Libre Franklin';
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 36px;
-    }
-    
-    h6 {
-        font-family: 'Libre Franklin';
-        font-weight: 700;
+        font-family: 'Archivo';
+        font-weight: 600;
         font-size: 16px;
         line-height: 24px;
+        text-transform: uppercase;
     }
-    
-    h7 {
-        font-family: 'AddingtonCFRegularItalic';
-        font-weight: normal;
-        font-size: 40px;
-        line-height: 48px;
-    }
-    
-    h8 {
-        font-family: 'Libre Franklin';
-        font-weight: 700;
+
+    h6 {
+        font-family: 'Archivo';
+        font-weight: 400;
         font-size: 12px;
         line-height: 16px;
+        margin-bottom: 0px;
     }
     
     p {
-        font-family: 'Libre Franklin';
+        font-family: 'Archivo';
         font-weight: 400;
         font-size: 16px;
         line-height: 24px;
         margin-bottom: 0px;
     }
     
-    #white {
-        color: white;
-    }
-    
-    #gray {
-        color: #A8AC8B;
-    }
-    
     a {
-        color: #2704FF;
+        color: #5872CE;
         text-decoration: underline;
     }
     
     a:hover {
-        color: black;
+        color: #4D4F5F;
         text-decoration: underline;
     }
+
     /* BUTTONS */
     
     .btn {
-        font-family: 'Libre Franklin';
-        font-weight: 700;
+        font-family: 'Archivo';
+        font-weight: 400;
         font-size: 16px;
         line-height: 24px;
         padding: 16px;
     }
-    /* Primary Button */
     
     .btn-outline-primary {
-        color: black;
+        color: #4D4F5F;
         background-color: none;
-        border-color: black;
-        border-radius: 0px;
+        border-color: #4D4F5F;
+        border-radius: 8px;
     }
     
     .btn-outline-primary:hover {
-        color: white;
-        background-color: black;
-        border-color: black;
+        color: #4D4F5F;
+        background-color: white;
+        border-color: #4D4F5F;
     }
     
     .btn-outline-primary:not(:disabled):not(.disabled):active {
-        color: white;
-        background-color: black;
-        border-color: black;
+        color: #4D4F5F;
+        background-color: white;
+        border-color: #4D4F5F;
     }
     
     .btn-outline-primary.focus,
     .btn-outline-primary:focus {
         box-shadow: 0 0 0 0;
     }
-    /* Secondary Button */
-    
-    .btn-outline-secondary {
-        color: #D7FF39;
-        background-color: none;
-        border-color: #D7FF39;
-        border-radius: 0px;
-    }
-    
-    .btn-outline-secondary:hover {
-        color: black;
-        background-color: #D7FF39;
-        border-color: #D7FF39;
-    }
-    
-    .btn-outline-secondary:not(:disabled):not(.disabled):active {
-        color: black;
-        background-color: #D7FF39;
-        border-color: #D7FF39;
-    }
-    
-    .btn-outline-secondary.focus,
-    .btn-outline-secondary:focus {
-        box-shadow: 0 0 0 0;
-    }
-    /* TAGS */
+
+    /* TAG */
     
     .tag {
         display: inline-block;
         padding: 8px 16px;
         border-radius: 32px;
+        background-color: white;
     }
-    
-    .tag-light {
-        background-color: #D7FF39;
-        color: black;
-    }
-    
-    .tag-dark {
-        background-color: black;
-        color: white;
-    }
-    /* CARDS */
+
+    /* CARD */
     
     .card {
-        font-family: 'Libre Franklin';
-        padding: 16px 24px;
-        border-radius: 0px;
+        font-family: 'Archivo';
+        padding: 24px;
+        border-radius: 8px;
+        border: none;
     }
-    
-    .card-light {
-        background-color: #D7FF39;
-        color: black;
-    }
-    
-    .card-dark {
+
+    .img-bg {
         background-color: black;
-        color: #D7FF39;
+        padding: 64px;
+        border-radius: 8px;
+        border: none;
     }
+
+    .feature {
+        padding-left: 32px;
+        border-left: 1px solid #4D4F5F;
+    }
+
     /* DIVIDER */
     
     .horizontal-line {
         border-top: 1px solid black;
     }
+
     /* LISTS */
     
     ul {
@@ -286,6 +217,7 @@
     ol {
         padding-left: 24px;
     }
+
     /* MOSAIC */
     
     .mosaic {
@@ -293,33 +225,16 @@
     }
     
     .mosaic-item:first-of-type {
-        grid-column: 2 / span 3;
-        grid-row: 2 / span 3;
-    }
-    
-    .mosaic-item:nth-of-type(2) {
-        grid-column: 3 / span 3;
-        grid-row: 3 / span 3;
+        grid-column: 2 / span 4;
+        grid-row: 2 / span 4;
     }
     
     .mosaic-item:last-of-type {
         grid-column: 1 / span 3;
         grid-row: 1 / span 3;
     }
+
     /* ANIMATION */
-    
-    .rotate {
-        animation: rotation 20s infinite linear;
-    }
-    
-    @keyframes rotation {
-        from {
-            transform: rotate(0deg);
-        }
-        to {
-            transform: rotate(359deg);
-        }
-    }
     
     .bounce {
         animation: bounce 2s infinite linear;
