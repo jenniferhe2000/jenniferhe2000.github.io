@@ -4,18 +4,22 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/blob/master/LICENSE)
  */
     
-    @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,600;0,700;1,200;1,400&family=Newsreader:ital,opsz,wght@1,6..72,300&display=swap');
-    
+    @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,400&family=Newsreader:ital,opsz,wght@1,6..72,300&display=swap');
     /* SECTIONS */
     
     #homepage {
         width: 100%;
         height: 100%;
     }
-
+    
     body {
         background-color: #EEF0F2;
         color: #4D4F5F;
+    }
+    
+    .dark {
+        background-color: black;
+        color: white;
     }
     
     header {
@@ -23,20 +27,30 @@
     }
     
     section {
-        padding-top: 128px;
-        padding-bottom: 0px;
-    }
-
-    .divider {
-        padding-top: 128px;
-        padding-bottom: 0px;
-    }
-
-    footer {
-        padding-top: 128px;
-        padding-bottom: 144px;      
+        margin-top: 88px;
+        margin-bottom: 0px;
     }
     
+    footer {
+        padding-top: 128px;
+        padding-bottom: 144px;
+    }
+    
+    .jumbotron {
+        background-color: transparent;
+        padding: 0;
+        border-radius: 0;
+    }
+    
+    .negative-margin {
+        margin-top: -72px;
+    }
+    
+    @media screen and (max-width: 991px) {
+        .negative-margin {
+            margin-top: 72px;
+        }
+    }
     /* NAVIGATION */
     
     nav {
@@ -45,10 +59,6 @@
         right: 0;
         left: 0;
         top: 0;
-    }
-    
-    .navbar-light {
-        background-color: #EEF0F2;
     }
     
     .navbar-light .navbar-nav .nav-link {
@@ -91,7 +101,6 @@
     
     h3 {
         font-family: 'Archivo';
-        font-style: italic;
         font-weight: 200;
         font-size: 32px;
         line-height: 48px;
@@ -99,8 +108,8 @@
     
     h4 {
         font-family: 'Archivo';
-        font-weight: 400;
-        font-size: 24px;
+        font-weight: 300;
+        font-size: 20px;
         line-height: 32px;
     }
     
@@ -111,10 +120,10 @@
         line-height: 24px;
         text-transform: uppercase;
     }
-
+    
     h6 {
         font-family: 'Archivo';
-        font-weight: 400;
+        font-weight: 600;
         font-size: 12px;
         line-height: 16px;
         margin-bottom: 0px;
@@ -128,6 +137,22 @@
         margin-bottom: 0px;
     }
     
+    .divider {
+        width: 100%;
+        height: 14px;
+        border-bottom: 1px solid #4D4F5F;
+        text-align: left"
+
+    }
+    
+    .divider-text {
+        background-color: #EEF0F2;
+        font-size: 12px;
+        line-height: 24px;
+        font-weight: 600;
+        padding: 0 16px 0 0;
+    }
+    
     a {
         color: #5872CE;
         text-decoration: underline;
@@ -137,7 +162,6 @@
         color: #4D4F5F;
         text-decoration: underline;
     }
-
     /* BUTTONS */
     
     .btn {
@@ -171,7 +195,6 @@
     .btn-outline-primary:focus {
         box-shadow: 0 0 0 0;
     }
-
     /* TAG */
     
     .tag {
@@ -180,34 +203,31 @@
         border-radius: 32px;
         background-color: white;
     }
-
     /* CARD */
     
     .card {
         font-family: 'Archivo';
         padding: 24px;
-        border-radius: 8px;
+        border-radius: 4px;
         border: none;
     }
-
+    
     .img-bg {
         background-color: black;
         padding: 64px;
         border-radius: 8px;
         border: none;
     }
-
+    
     .feature {
         padding-left: 32px;
         border-left: 1px solid #4D4F5F;
     }
-
     /* DIVIDER */
     
     .horizontal-line {
-        border-top: 1px solid black;
+        border-top: 1px solid white;
     }
-
     /* LISTS */
     
     ul {
@@ -218,7 +238,6 @@
         padding-left: 24px;
         margin-bottom: 0;
     }
-
     /* MOSAIC */
     
     .mosaic {
@@ -226,19 +245,89 @@
     }
     
     .mosaic-item:first-of-type {
-        grid-column: 2 / span 4;
-        grid-row: 2 / span 4;
+        grid-column: 2 / span 5;
+        grid-row: 2 / span 5;
     }
     
     .mosaic-item:last-of-type {
+        grid-column: 1 / span 4;
+        grid-row: 1 / span 3;
+    }
+    
+    .mosaic-note:first-of-type {
         grid-column: 1 / span 3;
         grid-row: 1 / span 3;
     }
-
+    
+    .mosaic-note:nth-of-type(2) {
+        rotate: -15deg;
+        grid-column: 3 / span 2;
+        grid-row: 4 / span 2;
+    }
+    
+    .mosaic-note:last-of-type {
+        grid-column: 5 / span 1;
+        grid-row: 2 / span 2;
+    }
+    
+    .mosaic-face:first-of-type {
+        grid-column: 1 / span 3;
+        grid-row: 1 / span 3;
+    }
+    
+    .mosaic-face:nth-of-type(2) {
+        grid-column: 3 / span 1;
+        grid-row: 2 / span 1;
+    }
+    
+    .mosaic-face:nth-of-type(3) {
+        grid-column: 4 / span 1;
+        grid-row: 3 / span 1;
+    }
+    
+    .mosaic-face:last-of-type {
+        grid-column: 3 / span 1;
+        grid-row: 4 / span 1;
+    }
+    
+    .mosaic-blob:first-of-type {
+        grid-column: 1 / span 3;
+        grid-row: 1 / span 3;
+    }
+    
+    .mosaic-blob:nth-of-type(2) {
+        grid-column: 3 / span 1;
+        grid-row: 2 / span 1;
+    }
+    
+    .mosaic-blob:last-of-type {
+        grid-column: 4 / span 1;
+        grid-row: 3 / span 1;
+    }
     /* ANIMATION */
     
+    .rotate {
+        animation: rotation 8s infinite linear;
+    }
+    
+    .rotate-note-cw {
+        animation: note-rotation-cw 1s infinite linear;
+    }
+    
+    .rotate-note-ccw {
+        animation: note-rotation-ccw 1s infinite linear;
+    }
+    
+    .flash-1 {
+        animation: flash-1 3s infinite linear;
+    }
+    
+    .flash-2 {
+        animation: flash-2 3s infinite linear;
+    }
+    
     .bounce {
-        animation: bounce 2s infinite linear;
+        animation: bounce 2s infinite ease-in-out;
     }
     
     @keyframes bounce {
@@ -250,5 +339,50 @@
         }
         100% {
             transform: translateY(0);
+        }
+    }
+    
+    @keyframes rotation {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(-359deg);
+        }
+    }
+    
+    @keyframes note-rotation-ccw {
+        25.01%,
+        50% {
+            rotate: 0deg;
+        }
+        50.01%,
+        100% {
+            rotate: -15deg;
+        }
+    }
+    
+    @keyframes note-rotation-cw {
+        25.01%,
+        50% {
+            rotate: 0deg;
+        }
+        50.01%,
+        100% {
+            rotate: 15deg;
+        }
+    }
+    
+    @keyframes flash-1 {
+        0%,
+        33% {
+            visibility: hidden;
+        }
+    }
+    
+    @keyframes flash-2 {
+        0%,
+        66% {
+            visibility: hidden;
         }
     }
