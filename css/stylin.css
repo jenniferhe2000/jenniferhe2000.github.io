@@ -4,36 +4,38 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/blob/master/LICENSE)
  */
     
-    @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,400&family=Newsreader:ital,opsz,wght@1,6..72,300&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,200;0,300;0,400;0,500;0,700;1,200;1,400&family=Newsreader:ital,opsz,wght@1,6..72,300&display=swap');
     /* SECTIONS */
     
-    #homepage {
-        width: 100%;
-        height: 100%;
+     :root {
+        --gray-100: #F9F9F9;
+        --gray-400: #888A91;
+        --gray-500: #6C6E76;
     }
     
     body {
-        background-color: #EEF0F2;
-        color: #4D4F5F;
+        font-family: 'Archivo';
     }
     
-    .dark {
-        background-color: black;
-        color: white;
+    .bg-light {
+        background-color: white !important;
+    }
+    
+    .bg-dark {
+        background-color: black !important;
     }
     
     header {
-        padding-top: 88px;
+        padding-top: 240px;
     }
     
     section {
-        margin-top: 88px;
-        margin-bottom: 0px;
+        padding-top: 72px;
     }
     
     footer {
-        padding-top: 128px;
-        padding-bottom: 144px;
+        padding-top: 72px;
+        padding-bottom: 24px;
     }
     
     .jumbotron {
@@ -41,175 +43,136 @@
         padding: 0;
         border-radius: 0;
     }
-    
-    .negative-margin {
-        margin-top: -320px;
-    }
-    
-    @media screen and (max-width: 991px) {
-        .negative-margin {
-            margin-top: 72px;
-        }
-    }
     /* NAVIGATION */
     
     nav {
         z-index: 9999;
-        position: sticky !important;
+        position: fixed !important;
         right: 0;
         left: 0;
         top: 0;
+        background: transparent;
+        backdrop-filter: blur(10px);
     }
     
     .navbar-light .navbar-nav .nav-link {
         font-family: 'Archivo';
-        font-weight: 400;
-        font-size: 12px;
-        text-decoration: underline;
-        color: #5872CE;
+        font-weight: 200;
+        font-size: 16px;
+        text-decoration: none;
+        color: var(--gray-500);
         padding-left: 16px;
         padding-right: 16px;
     }
     
     .navbar-light .navbar-nav .nav-link:hover {
-        color: #4D4F5F;
-        background-color: none;
+        color: black;
     }
     
     .navbar-light .navbar-nav .active .nav-link {
         text-decoration: none;
-        font-weight: 700;
-        color: #4D4F5F;
+        font-weight: 400;
+        color: black;
     }
     /* TYPOGRAPHY */
     
+    h1.light,
+    h2.light,
+    p.strong.light {
+        color: black;
+    }
+    
+    h1.dark,
+    h2.dark,
+    p.strong.dark {
+        color: white;
+    }
+    
     h1 {
-        font-family: 'Newsreader';
-        font-style: italic;
-        font-weight: 300;
-        font-size: 72px;
-        line-height: 88px;
+        font-weight: 200;
+        font-size: 48px;
+        line-height: 56px;
     }
     
     h2 {
-        font-family: 'Newsreader';
-        font-style: italic;
-        font-weight: 300;
-        font-size: 48px;
-        line-height: 64px;
-    }
-    
-    h3 {
-        font-family: 'Archivo';
         font-weight: 200;
         font-size: 32px;
         line-height: 48px;
     }
     
+    h3 {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 32px;
+        color: var(--gray-400);
+    }
+    
+    h4.light,
+    p.light {
+        color: var(--gray-500);
+    }
+    
+    h4.dark,
+    p.dark {
+        color: var(--gray-400);
+    }
+    
     h4 {
-        font-family: 'Archivo';
-        font-weight: 300;
-        font-size: 20px;
+        font-weight: 200;
+        font-size: 24px;
         line-height: 32px;
     }
     
-    h5 {
-        font-family: 'Archivo';
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 24px;
-        text-transform: uppercase;
-    }
-    
-    h6 {
-        font-family: 'Archivo';
-        font-weight: 600;
-        font-size: 12px;
-        line-height: 16px;
-        margin-bottom: 0px;
-    }
-    
     p {
-        font-family: 'Archivo';
-        font-weight: 400;
+        font-weight: 300;
         font-size: 16px;
         line-height: 24px;
         margin-bottom: 0px;
     }
     
-    .divider {
-        width: 100%;
-        height: 16px;
-        border-bottom: 1px solid #4D4F5F;
-        text-align: left;
+    p.strong {
+        font-weight: 400;
     }
     
-    .divider-text {
-        background-color: #EEF0F2;
-        font-size: 12px;
-        line-height: 24px;
-        font-weight: 600;
-        padding: 0 16px 0 0;
+    .black {
+        color: black;
     }
     
     a {
-        color: #5872CE;
+        color: var(--gray-500);
         text-decoration: underline;
+        display: inline-block;
     }
     
     a:hover {
-        color: #4D4F5F;
+        color: black;
         text-decoration: underline;
     }
-    /* BUTTONS */
     
-    .btn {
-        font-family: 'Archivo';
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 24px;
-        padding: 16px;
+    .thumbnail {
+        display: block;
+        z-index: 999;
+        cursor: pointer;
+        -webkit-transition-property: all;
+        -webkit-transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease;
     }
     
-    .btn-outline-primary {
-        color: #4D4F5F;
-        background-color: none;
-        border-color: #4D4F5F;
-        border-radius: 8px;
+    .thumbnail:hover {
+        transform: scale(1.05);
     }
+    /* DIVIDERS AND CARDS */
     
-    .btn-outline-primary:hover {
-        color: #4D4F5F;
-        background-color: white;
-        border-color: #4D4F5F;
+    .divider {
+        border-bottom: 2px solid var(--gray-100);
     }
-    
-    .btn-outline-primary:not(:disabled):not(.disabled):active {
-        color: #4D4F5F;
-        background-color: white;
-        border-color: #4D4F5F;
-    }
-    
-    .btn-outline-primary.focus,
-    .btn-outline-primary:focus {
-        box-shadow: 0 0 0 0;
-    }
-    /* TAG */
-    
-    .tag {
-        display: inline-block;
-        padding: 8px 16px;
-        background-color: white;
-        border-radius: 8px;
-        font-size: 12px;
-    }
-    /* CARD */
     
     .card {
         font-family: 'Archivo';
-        padding: 24px;
+        padding: 32px;
         border-radius: 4px;
         border: none;
+        background-color: var(--gray-100);
     }
     
     .img-bg {
