@@ -5,12 +5,14 @@
  */
     
     @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,200;0,300;0,400;0,500;0,700;1,200;1,400&family=Newsreader:ital,opsz,wght@1,6..72,300&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&display=swap');
     /* SECTIONS */
     
      :root {
         --gray-100: #F9F9F9;
         --gray-400: #888A91;
         --gray-500: #6C6E76;
+        --blue-500: #273998;
     }
     
     body {
@@ -43,6 +45,7 @@
         padding: 0;
         border-radius: 0;
     }
+
     /* NAVIGATION */
     
     nav {
@@ -57,16 +60,17 @@
     
     .navbar-light .navbar-nav .nav-link {
         font-family: 'Archivo';
-        font-weight: 200;
-        font-size: 16px;
+        font-weight: 300;
+        font-size: 12px;
         text-decoration: none;
-        color: var(--gray-500);
+        color: var(--blue-500);
         padding-left: 16px;
         padding-right: 16px;
     }
     
     .navbar-light .navbar-nav .nav-link:hover {
-        color: black;
+        color: var(--blue-500);
+        text-decoration: underline;
     }
     
     .navbar-light .navbar-nav .active .nav-link {
@@ -101,7 +105,7 @@
     }
     
     h3 {
-        font-weight: 500;
+        font-weight: 400;
         font-size: 24px;
         line-height: 32px;
         color: var(--gray-400);
@@ -118,9 +122,17 @@
     }
     
     h4 {
-        font-weight: 200;
-        font-size: 24px;
-        line-height: 32px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    h5 {
+        font-family: 'Caveat';
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 48px;
+        color: var(--gray-400);
     }
     
     p {
@@ -139,13 +151,13 @@
     }
     
     a {
-        color: var(--gray-500);
-        text-decoration: underline;
+        color: var(--blue-500);
+        text-decoration: none;
         display: inline-block;
     }
     
     a:hover {
-        color: black;
+        color: var(--blue-500);
         text-decoration: underline;
     }
     
@@ -169,8 +181,7 @@
     
     .card {
         font-family: 'Archivo';
-        padding: 32px;
-        border-radius: 4px;
+        padding: 48px 32px;
         border: none;
         background-color: var(--gray-100);
     }
@@ -201,7 +212,7 @@
         padding-left: 24px;
         margin-bottom: 0;
     }
-    /* MOSAIC */
+    /* MOSAIC 
     
     .mosaic {
         display: grid;
@@ -267,7 +278,8 @@
         grid-column: 4 / span 1;
         grid-row: 3 / span 1;
     }
-    /* ANIMATION */
+    
+    ANIMATION
     
     .rotate {
         animation: rotation 8s infinite linear;
@@ -349,3 +361,6 @@
             visibility: hidden;
         }
     }
+
+    */
+
