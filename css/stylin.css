@@ -186,17 +186,6 @@
         background-color: var(--gray-100);
     }
     
-    .img-bg {
-        background-color: black;
-        padding: 64px;
-        border-radius: 8px;
-        border: none;
-    }
-    
-    .feature {
-        padding-left: 32px;
-        border-left: 1px solid #4D4F5F;
-    }
     /* DIVIDER */
     
     .horizontal-line {
@@ -212,6 +201,13 @@
         padding-left: 24px;
         margin-bottom: 0;
     }
+
+    /* IMG */
+
+    .radius {
+        border-radius: 16px;
+    }
+
     /* MOSAIC 
     
     .mosaic {
