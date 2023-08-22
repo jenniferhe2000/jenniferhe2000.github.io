@@ -8,7 +8,7 @@
     @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&display=swap');
     /* SECTIONS */
     
-     :root {
+    :root {
         --gray-100: #F9F9F9;
         --gray-400: #888A91;
         --gray-500: #6C6E76;
@@ -17,6 +17,7 @@
     
     body {
         font-family: 'Archivo';
+        cursor: url("/Users/jenniferhe/Documents/GitHub/jenniferhe2000.github.io/img/cursor-cat.svg"), auto;
     }
     
     .bg-light {
@@ -28,7 +29,7 @@
     }
     
     header {
-        padding-top: 240px;
+        padding-top: 120px;
     }
     
     section {
@@ -100,13 +101,13 @@
     
     h2 {
         font-weight: 200;
-        font-size: 32px;
+        font-size: 36px;
         line-height: 48px;
     }
     
     h3 {
         font-weight: 400;
-        font-size: 24px;
+        font-size: 28px;
         line-height: 32px;
         color: var(--gray-400);
     }
@@ -130,8 +131,8 @@
     h5 {
         font-family: 'Caveat';
         font-weight: 500;
-        font-size: 32px;
-        line-height: 48px;
+        font-size: 24px;
+        line-height: 28px;
         color: var(--gray-400);
     }
     
@@ -149,6 +150,13 @@
     .black {
         color: black;
     }
+
+    #title-font {
+        font-family: 'Caveat';
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 48px;
+    }
     
     a {
         color: var(--blue-500);
@@ -159,20 +167,10 @@
     a:hover {
         color: var(--blue-500);
         text-decoration: underline;
+        cursor: url("/Users/jenniferhe/Documents/GitHub/jenniferhe2000.github.io/img/cursor-cat-hover.svg"), auto;
+
     }
     
-    .thumbnail {
-        display: block;
-        z-index: 999;
-        cursor: pointer;
-        -webkit-transition-property: all;
-        -webkit-transition-duration: 0.3s;
-        -webkit-transition-timing-function: ease;
-    }
-    
-    .thumbnail:hover {
-        transform: scale(1.05);
-    }
     /* DIVIDERS AND CARDS */
     
     .divider {
@@ -204,8 +202,9 @@
 
     /* IMG */
 
-    .radius {
+    .border {
         border-radius: 16px;
+        border: var(--gray-400);
     }
 
     /* MOSAIC 
@@ -276,6 +275,19 @@
     }
     
     ANIMATION
+
+    .thumbnail {
+        display: block;
+        z-index: 999;
+        cursor: pointer;
+        -webkit-transition-property: all;
+        -webkit-transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease;
+    }
+    
+    .thumbnail:hover {
+        transform: scale(1.05);
+    }
     
     .rotate {
         animation: rotation 8s infinite linear;
