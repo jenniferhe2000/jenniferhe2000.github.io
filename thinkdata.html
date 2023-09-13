@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143042748-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-143042748-1');
+    </script>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/86f5400352.js" crossorigin="anonymous"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>ThinkData Internship</title>
+    <link rel="shortcut icon" href="img/logo.ico">
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/stylin.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <script>
+        var password = "pineapplecake";
+        (function passcodeprotect() {
+        var passcode = prompt("hey there, what's the secret password? hint: i was hungry when i chose it");
+        while (passcode !== password) {
+        alert("sorry, that's incorrect =^_^=");
+        return passcodeprotect();
+        }
+        }());
+        alert('nom nom nom');
+    </script>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md navbar-light pt-3 px-3 ">
+        <a class="navbar-brand nav-link" href="index.html">
+            <img src="img/logo-1.svg" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Design</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="fun.html">Fun</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="documents/JenniferHe_Resume_2022_2023.pdf" target="_blank">Resume</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="jumbotron">
+        <img src="img/thinkdata/thinkdata-hero.png" class="img-fluid w-100" >
+    </div>
+
+    <section class="bg-light">
+        <div class="container divider">
+            <div class="row mb-5">
+                <div class="col-12 col-md-10 offset-md-1">
+                    <h1 class="mb-3 light text-center">Redesigning the source creation form for cataloguing data sources</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 col-md-8 mb-5 order-2 order-md-1">
+                    <div class="card mb-3">
+                        <p class="strong light mb-3">Introduction</p>
+                        <h4 class="light">ThinkData Works is a Toronto-based startup that builds a data governance platform. The platform’s source catalog lets organizations maintain a record all data sources that they import data from.</h4>
+                    </div>
+                    <img src="img/thinkdata/source-catalog.png" class="img-fluid border w-100 mb-3" />
+                    <p class="light mb-3 text-center">ThinkData’s source catalog</p>
+                </div>
+                <div class="col-12 col-md-3 offset-md-1 order-1 order-md-2 mb-5">
+                    <p class="strong light">Project Type</p>
+                    <p class="light mb-5">ThinkData Works | Internship project </p>
+                    <p class="strong light">Role</p>
+                    <p class="light mb-5">Lead Product Designer</p>
+                    <p class="strong light">Skills</p>
+                    <p class="light mb-5">UI/UX Design, Interaction Design</p>
+                    <p class="strong light">Team</p>
+                    <p class="light mb-5">1 Product Manager & Engineer</p>
+                    <p class="strong light">Timeline</p>
+                    <p class="light">6 weeks</p>
+                </div>
+            </div>
+    </section>
+
+    <section class="bg-dark">
+        <div class="container py-5">
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h2 class="dark mb-4">The Create Source form is used to create a new record for a data source in the source catalog, but there were two problems.</h2>
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col-12 col-md-3 mb-3">
+                    <h3 class="dark mb-3">The form was difficult for non-technical users to understand</h3>
+                    <p class="dark mb-3">Non-technical users are users without a background in data engineering (e.g. a project manager). They may have questions such as: What are warehouses? What is an ingestion schedule? It was difficult for non-technical users to understand what inputs were required.</p>
+                </div>
+                <div class="col-12 col-md-8 offset-md-1">
+                    <img src="img/thinkdata/previous-form.png" class="img-fluid w-100 mb-3" />
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-12 col-md-3 mb-3">
+                    <h3 class="dark">The task flow was not optimized for completion</h3>
+                </div>
+                <div class="col-12 col-md-8 offset-md-1">
+                    <p class="dark mb-3">In the current form, users must select a valid credential to complete the form. If a credential does not exist for the source, the user must cancel the form, create the credential, and return to start the form again.</p>
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col-12">
+                    <img src="img/thinkdata/user-flow-1.png" class="img-fluid w-100 mb-3" />
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="bg-light">
+        <div class="container divider">
+            <div class="row mb-5">
+                <div class="col-12 col-md-3 mb-3">
+                    <h2 class="light">Optimizing the task flow</h2>
+                </div>
+                <div class="col-12 col-md-8 offset-md-1 mb-3">
+                    <div class="card mb-3">
+                        <h4 class="light">I started with task flows to ensure the form could be completed and that the form structure was made intuitive before committing to any UI.</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col-12 col-md-3 mb-3">
+                    <h3 class="light mb-3">Optimizing for successful form completion</h3>
+                    <p class="light">Users expect to create a credential if they are unable to select from existing credentials.</p>
+                </div>
+                <div class="col-12 col-md-8 offset-md-1 mb-3">
+                    <img src="img/thinkdata/user-flow-2.png" class="img-fluid w-100 mb-3" />
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col-12 col-md-3 mb-3">
+                    <h3 class="light mb-3">Improving form sequence</h3>
+                    <p class="light">Non-technical users didn’t realize these fields were related to each another because they were not logically sequenced.</p>
+                </div>
+                <div class="col-12 col-md-8 offset-md-1 mb-3">
+                    <img src="img/thinkdata/user-flow-3.png" class="img-fluid w-100 mb-3" />
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col-12 col-md-3 mb-3">
+                    <p class="light">I redesigned the task flow so that related fields were in proximity to one another.</p>
+                </div>
+                <div class="col-12 col-md-8 offset-md-1 mb-3">
+                    <img src="img/thinkdata/user-flow-4.png" class="img-fluid w-100 mb-3" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light">
+        <div class="container divider">
+            <div class="row mb-5">
+                <div class="col-12 col-md-3 mb-3">
+                    <h2 class="light">Form UI explorations: 2 extremes</h2>
+                </div>
+                <div class="col-12 col-md-8 offset-md-1 mb-3">
+                    <div class="card mb-3">
+                        <h4 class="light">Although I explored many different form UI options, these two were the most critical to informing the final solution. On one end, I met the criteria of our task flow. On the other end, I explored something entirely new.</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col-12 col-md-3 mb-3">
+                    <h3 class="light mb-3">Meeting our task flow criteria</h3>
+                    <p class="light">In the first option, related fields are logically sequenced and users have the option to create a credential if they haven’t already.</p>
+                </div>
+                <div class="col-12 col-md-8 offset-md-1 mb-3">
+                    <img src="img/thinkdata/option-1.png" class="img-fluid w-100 mb-3" />
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col-12 col-md-3 mb-3">
+                    <h3 class="light mb-3">Exploring something entirely new</h3>
+                    <p class="light">Once it was established that we could meet our basic task flow criteria, I could explore other UI patterns.</p>
+                </div>
+                <div class="col-12 col-md-8 offset-md-1 mb-3">
+                    <img src="img/thinkdata/option-2.png" class="img-fluid w-100 mb-3" />
+                    <img src="img/thinkdata/option-2-table.png" class="img-fluid w-100 mb-3" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light">
+        <div class="container divider">
+            <div class="row mb-3">
+                <div class="col-12 col-md-3 mb-3">
+                    <h2 class="light">Final form UI: Finding the middle ground</h2>
+                </div>
+                <div class="col-12 col-md-8 offset-md-1">
+                    <div class="card mb-3">
+                        <h4 class="light">I needed to find the middle ground. The final solution used a measured combination of wizard, accordion, description & label components to support items in the form that non-technical users had difficulty with.</h4>
+                    </div>
+                    <p class="light mb-3">I asked stakeholders if there were particular high effort items in the form that non-technical users have difficulty with. These were my key insights:</p>
+                    <ul>
+                        <li><p class="light">It was easy for users to understand what was required in the source name and description fields</p></li>
+                        <li><p class="light">It was difficult for users to understand what was required in the other fields and users didn’t realize they were configuring defaults for the source</p></li>
+                    </ul>
+                    <p class="light mb-3">Additionally, users may have questions such as:</p>
+                    <ul>
+                        <li><p class="light">What is ingestion?</p></li>
+                        <li><p class="light">What is a credential used for?</p></li>
+                        <li><p class="light">What is a warehouse?</p></li>
+                        <li><p class="light">What is an ingestion schedule?</p></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col-12">
+                    <img src="img/thinkdata/option-3.png" class="img-fluid w-100 mb-3" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light">
+        <div class="container divider">
+            <div class="row mb-3">
+                <div class="col-12 col-md-3 mb-3">
+                    <h2 class="light">3 iterations of selecting a source type</h2>
+                </div>
+                <div class="col-12 col-md-8 offset-md-1 mb-3">
+                    <div class="card mb-5">
+                        <h4 class="light">UI for selecting a source type went through several iterations to support scalability and user comprehension.</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col-12 col-md-4">
+                    <img src="img/thinkdata/interaction-1.png" class="img-fluid w-100 mb-3" />
+                </div>
+                <div class="col-12 col-md-4">
+                    <img src="img/thinkdata/interaction-2.png" class="img-fluid w-100 mb-3" />
+                </div>
+                <div class="col-12 col-md-4">
+                    <img src="img/thinkdata/interaction-3.png" class="img-fluid w-100 mb-3" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-dark">
+        <div class="container py-5">
+            <div class="row mb-5">
+                <div class="col-12 col-md-10 offset-md-1">
+                    <h2 class="dark mb-5">The final form prototype</h2>
+                    <img src="img/thinkdata/prototype.gif" class="img-fluid w-100 mb-3" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light">
+        <div class="container divider">
+            <div class="row mb-5">
+                <div class="col-12 col-md-3 mb-3">
+                    <h2 class="light">Learnings</h2>
+                </div>
+                <div class="col-12 col-md-8 offset-md-1">
+                    <h4 class="light mb-3">Overcoming early startup challenges</h4>
+                    <p class="light mb-5">At an early-stage startup, I didn't have a user research team or direct access to our clients for research. I used competitive analysis and relied on stakeholders to discuss client needs and adhere to a user-centred design process.
+                    </p>
+                    <h4 class="light mb-3">The benefits of exploring something crazy</h4>
+                    <p class="light">I took the opportunity to explore a UI pattern that deviated from our design system and was different than what had been done in the past. At first, it felt unviable, but it opened up a more insightful discussion with the rest of my team.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-light">
+        <div class="container pb-5">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="mb-3 light">Say hello! We can talk about design or maybe your favourite Spotify playlists.</h2>
+                    <div>
+                        <a href="mailto:jenniferyhe518@gmail.com " class="mr-3">
+                            <p class="strong">Email &#8594;</p>
+                        </a>
+                        <a href="https://www.linkedin.com/in/jenniferyhe/ " class="mr-3" target="_blank">
+                            <p class="strong">Linkedin &#8594;</p>
+                        </a>
+                        <a href="https://twitter.com/jennyfurhe " target="_blank">
+                            <p class="strong">Twitter &#8594;</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <p class="light text-right">© jennyfurhe 2023</p>
+                </div>
+            </div>
+        </div>
+    </footer>
