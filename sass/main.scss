@@ -1,0 +1,239 @@
+$grid-gutter-width: 16px;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 414px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1200px,
+);
+
+$container-max-widths: (
+  xs: 382px,
+  // ≥0px
+  sm: 672px,
+  // ≥414px
+  md: 720px,
+  // ≥768px
+  lg: 976px,
+  // ≥1024px
+  xl: 1140px,
+  // ≥1200px
+);
+
+$spacer: 2px;
+$spacers: (
+  0: 0,
+  1: $spacer * 1,
+  2: $spacer * 2,
+  3: $spacer * 4,
+  4: $spacer * 8,
+  5: $spacer * 16,
+);
+
+$gray-100: #f9f9f9;
+$gray-200: #f1f1f1;
+$gray-300: #eeeeee;
+$gray-400: #909090;
+$gray-900: #4f4f4f;
+$blue: #1500ff;
+
+$primary: $blue;
+
+// import bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+// global html elements
+body {
+  padding-top: 128px;
+  padding-bottom: 128px;
+  font-family: "Inter";
+  background-color: $gray-100;
+  cursor: none;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: map-get($spacers, 5);
+  margin-bottom: map-get($spacers, 5); // 32px
+  width: 284px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: map-get($spacers, 5); // 32px
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: map-get($spacers, 4); // 16px
+}
+
+img {
+  width: 100%;
+}
+
+img.hidden {
+  display: none;
+}
+
+// CURSOR
+
+.cursor {
+  position: fixed;
+  z-index: 9999;
+  pointer-events: none;
+}
+
+.cursor-ball-sm,
+.cursor-ball-lg {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.cursor-ball-sm {
+  width: 16px;
+  height: 16px;
+  background-color: rgba($blue, 0.6);
+}
+
+.cursor-ball-lg {
+  width: 32px;
+  height: 32px;
+  background-color: rgba($blue, 0.4);
+}
+
+// NAV
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: map-get($spacers, 2); // 8px
+  padding: 0;
+  list-style: none;
+}
+
+// LINKS
+
+a {
+  font-size: 14px;
+  line-height: 22px;
+  color: $blue;
+  align-self: flex-start;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: $blue;
+  text-decoration: none;
+}
+
+a img {
+  vertical-align: text-bottom;
+}
+
+// TYPOGRAPHY
+
+h1 {
+  margin: 0;
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: 400;
+  color: $gray-400;
+}
+
+h2 {
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $gray-400;
+}
+
+p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+p.emphasized {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+// ICON SIZES
+
+.icon-s {
+  width: 16px;
+  height: 16px;
+}
+
+.icon-m {
+  width: 20px;
+  height: 20px;
+}
+
+.icon-l {
+  width: 32px;
+  height: 32px;
+}
+
+// COMPOSITES
+
+button {
+  font-family: "Inter";
+  font-size: 14px;
+  line-height: 22px;
+  color: $gray-900;
+  background-color: $white;
+  border-radius: 32px;
+  border-width: 1px;
+  border-color: $gray-300;
+  border-style: solid;
+  padding: 8px 16px;
+}
+
+button:hover {
+  background-color: $gray-100;
+}
+
+button.active {
+  background-color: $gray-300;
+}
+
+.button-group {
+  display: flex;
+  gap: map-get($spacers, 2); // 8px
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-group {
+  display: flex;
+  flex-direction: column;
+  gap: map-get($spacers, 2); // 8px
+}
+
+// fix left side at md breakpoint
+@media (min-width: 768px) {
+  .left {
+    position: fixed;
+    top: 128px;
+    height: 100vh;
+    width: 284px;
+    z-index: 1000;
+  }
+}
+
+@media (min-width: 768px) {
+  .right {
+    margin-left: 400px;
+  }
+}
