@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html id="homepage-html">
+  <head>
+    <title>Loblaw Digital</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <!-- Custom styles for this template -->
+    <link href="css/main.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="cursor">
+      <div class="cursor-ball-lg"></div>
+      <div class="cursor-ball-sm"></div>
+    </div>
+    <div class="container">
+      <div class="left">
+        <a href="index.html">
+          <button type="button">
+            <img class="icon-s mr-1" src="assets/icons/icon=chevron-left.svg" />
+            Work
+          </button>
+        </a>
+        <p class="emphasized">
+          Enabling efficient e-comm campaign production with searchable
+          dropdowns
+        </p>
+        <section>
+          <div class="text-group">
+            <h3>Role</h3>
+            <p>Associate product designer</p>
+          </div>
+          <div class="text-group">
+            <h3>Collaborators</h3>
+            <p>Senior product designer</p>
+            <p>Product manager</p>
+            <p>FE engineers</p>
+          </div>
+          <div class="text-group">
+            <h3>Duration</h3>
+            <p>2 week sprint</p>
+          </div>
+          <div class="text-group">
+            <h3>Status</h3>
+            <p>Released to production</p>
+          </div>
+        </section>
+      </div>
+      <div class="right">
+        <img src="assets/searchable/prototype.gif" />
+        <p class="emphasized">
+          I defined searchable dropdown behaviour for internal tools at Loblaw
+          Digital, reducing colleague time on repetitive search tasks and
+          enabling the production of hyper-personalized campaigns.
+          Personalization of campaigns increased campaign click-through rates on
+          our grocery websites by X%.
+        </p>
+        <div class="text-group">
+          <h2>My role</h2>
+          <p>
+            In January 2024, I joined the personalization team at Loblaw
+            Digital. Our team designed tools for colleagues that produce
+            personalized campaigns for 1M+ customers across Canada.
+          </p>
+        </div>
+        <div class="text-group">
+          <h2>Problem</h2>
+          <ul>
+            <li>
+              <p>
+                Personalized campaign production is repetitive – a unique
+                variant of a campaign is created for every target audience
+              </p>
+            </li>
+            <li>
+              <p>
+                For repetitive search tasks, it became time-consuming for
+                colleagues to find the target item in a dropdown “mega-menu” of
+                50+ menu items
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="text-group">
+          <h2>Solution</h2>
+          <p class="emphasized">
+            Why was this an effective search solution for us?
+          </p>
+          <ul>
+            <li>
+              <p>
+                A searchable dropdown was a low-effort alternative to typeahead
+                search
+              </p>
+            </li>
+            <li>
+              <p>
+                Task-analysis validated that our colleagues need to filter the
+                mega-menu after typing a keyword to complete their JTBDs, but
+                providing search suggestions was not necessary
+              </p>
+            </li>
+          </ul>
+        </div>
+        <img src="assets/searchable/task-analysis.png" />
+        <section>
+          <div class="text-group">
+            <h2>Defining searchable dropdown behaviour</h2>
+            <p class="emphasized">
+              I used searchable dropdown best practices, but adapted for
+              internal tools
+            </p>
+          </div>
+          <div class="text-group">
+            <h3>The height of the dropdown menu is flexible</h3>
+            <ul>
+              <li>
+                <p>
+                  I learned that ideally, colleagues want to see all menu items
+                  immediately on focus: <i
+                    >”If I immediately see the [item] I need to find in the
+                    menu, I can just click on it there”.</i
+                  >
+                </p>
+              </li>
+              <li>
+                <p>
+                  If it is not possible to show all menu items, the menu can be
+                  set to a max. height
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="text-group">
+            <h3>Dropdown items must be sorted alphabetically</h3>
+            <p>
+              The current experience listed segments in alphabetical order, and
+              this was validated by our colleagues to be a good experience –
+              <i
+                >The [items] are listed in alphabetical order, which is helpful
+                in finding what we need right now”</i
+              >“
+            </p>
+          </div>
+          <div class="text-group">
+            <h3>Dropdown items must be parsable from anywhere</h3>
+            <p>
+              Dropdown items in our internal systems had legacy names with
+              prefixes that were unintuitive. Our colleagues should be able to
+              ignore prefixes upon search.
+            </p>
+          </div>
+          <div class="text-group">
+            <h3>Search cannot be case-sensitive</h3>
+            <p>
+              Furthermore, dropdown items in our internal systems had legacy
+              names formatted in camelCase. Our colleagues should not have to
+              remember which characters in the target item are upper or
+              lowercase.
+            </p>
+          </div>
+          <div class="text-group">
+            <h3>Bold substrings of the result that match the user input</h3>
+            <p>
+              This is a best practice that provides the user with visual
+              feedback of their inputs.
+            </p>
+          </div>
+        </section>
+        <section>
+          <img src="assets/searchable/placement-1.gif" />
+        </section>
+        <section>
+          <img src="assets/searchable/placement-2.gif" />
+        </section>
+        <section>
+          <img src="assets/searchable/placement-3.gif" />
+        </section>
+        <section>
+          <div class="text-group">
+            <h2>Learnings</h2>
+            <p class="emphasized">Reflections from this 2-week sprint</p>
+          </div>
+          <div class="text-group">
+            <h3>
+              There is more to search than an input field and a dropdown menu
+            </h3>
+            <p>
+              A searchable dropdown is composed of an input field and a dropdown
+              menu, but I also needed to consider how these two nested
+              components speak to one another. What is the height of the
+              dropdown menu? How should we handle case-sensitivity? Solutions
+              were found by thinking about how our colleagues work and validated
+              as feasible by the tech team.
+            </p>
+          </div>
+          <div class="text-group">
+            <h3>Component design is not isolated from user-centred design</h3>
+            <p>
+              Intuitively, I think about component design as an exercise in
+              design systems thinking, visual design, and interaction design.
+              It’s less intuitive to imagine how user research has a role in
+              component design. However, task analysis was essential to
+              validating the search solution was effective.
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script
+      src=" https://code.jquery.com/jquery-3.4.1.slim.min.js "
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n "
+      crossorigin="anonymous "
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js "
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo "
+      crossorigin="anonymous "
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js "
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 "
+      crossorigin="anonymous "
+    ></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js "></script>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/cursor.js "></script>
+    <script src="js/toggle.js "></script>
+  </body>
+</html>

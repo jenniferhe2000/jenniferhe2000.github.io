@@ -7,11 +7,11 @@ const hoverables = document.body.querySelectorAll(".hoverable");
 document.body.addEventListener("mousemove", (e) => {
   gsap.to(cursorBallLg, 0.4, {
     x: `${e.clientX - cursorBallLg.offsetWidth / 2}px`,
-    y: `${e.clientY - cursorBallLg.offsetHeight / 2 - 128}px`,
+    y: `${e.clientY - cursorBallLg.offsetHeight / 2 - 80}px`,
   });
   gsap.to(cursorBallSm, 0.1, {
     x: `${e.clientX - cursorBallSm.offsetWidth / 2}px`,
-    y: `${e.clientY - cursorBallSm.offsetHeight / 2 - 128}px`,
+    y: `${e.clientY - cursorBallSm.offsetHeight / 2 - 80}px`,
   });
 });
 

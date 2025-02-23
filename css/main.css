@@ -11032,8 +11032,8 @@ textarea.form-control-lg {
   }
 }
 body {
-  padding-top: 128px;
-  padding-bottom: 128px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   font-family: "Inter";
   background-color: #f9f9f9;
   cursor: none;
@@ -11132,6 +11132,14 @@ h2, .h2 {
   color: #909090;
 }
 
+h3, .h3 {
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #909090;
+}
+
 p {
   margin: 0;
   font-size: 14px;
@@ -11141,6 +11149,11 @@ p {
 p.emphasized {
   font-size: 16px;
   line-height: 24px;
+}
+
+ul {
+  margin: 0;
+  padding-left: 24px;
 }
 
 .icon-s {
@@ -11169,6 +11182,7 @@ button {
   border-color: #eeeeee;
   border-style: solid;
   padding: 8px 16px;
+  align-self: start;
 }
 
 button:hover {
@@ -11198,7 +11212,7 @@ button.active {
 @media (min-width: 768px) {
   .left {
     position: fixed;
-    top: 128px;
+    top: 80px;
     height: 100vh;
     width: 284px;
     z-index: 1000;
