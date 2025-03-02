@@ -34,8 +34,8 @@
           </button>
         </a>
         <p class="emphasized">
-          Enabling efficient e-comm campaign production with searchable
-          dropdowns
+          Enabling efficient e-comm campaign production with searchable select
+          menus
         </p>
         <section>
           <div class="text-group">
@@ -61,18 +61,21 @@
       <div class="right">
         <img src="assets/searchable/prototype.gif" />
         <p class="emphasized">
-          I defined searchable dropdown behaviour for internal tools at Loblaw
-          Digital, reducing colleague time on repetitive search tasks and
-          enabling the production of hyper-personalized campaigns.
-          Personalization of campaigns increased campaign click-through rates on
-          our grocery websites by X%.
+          During a 2 week sprint at Loblaw Digital, I defined searchable select
+          menu interactions for our internal Campaign Manager, reducing
+          production time and enabling the production of personalized campaigns
+          at scale. In one year, the difference in revenue between personalized
+          campaigns built in Campaign Manager and non-personalized campaigns was
+          +5.8M.
         </p>
         <div class="text-group">
           <h2>My role</h2>
           <p>
             In January 2024, I joined the personalization team at Loblaw
-            Digital. Our team designed tools for colleagues that produce
-            personalized campaigns for 1M+ customers across Canada.
+            Digital. Our team was responsible for our internal Campaign Manager,
+            a campaign management tool used by our colleagues to produce
+            personalized campaigns for 1M+ customers across Canada. When I
+            joined, Campaign Manager had just launched the previous month.
           </p>
         </div>
         <div class="text-group">
@@ -80,15 +83,27 @@
           <ul>
             <li>
               <p>
-                Personalized campaign production is repetitive – a unique
-                variant of a campaign is created for every target audience
+                Because unique content must be created for every audience
+                segment, campaign personalization requires more content. Menus
+                on our interface connected to our content databases were
+                growing, and items became more and more difficult for colleagues
+                to find.
               </p>
             </li>
             <li>
               <p>
-                For repetitive search tasks, it became time-consuming for
-                colleagues to find the target item in a dropdown “mega-menu” of
-                50+ menu items
+                Personalized campaign production is repetitive – a unique
+                campaign is created for every audience segment – so our
+                colleagues interfaced with these long menus on a day-to-day.
+                Colleagues reported frustration because they had to repeatedly
+                find items buried within our long menus.
+              </p>
+            </li>
+            <li>
+              <p>
+                In order for personalized campaign production to scale, even
+                more content needs to be created, which means menus will only
+                get longer.
               </p>
             </li>
           </ul>
@@ -101,15 +116,15 @@
           <ul>
             <li>
               <p>
-                A searchable dropdown was a low-effort alternative to typeahead
-                search
+                A searchable select menu was a lower effort alternative to
+                typeahead search
               </p>
             </li>
             <li>
               <p>
-                Task-analysis validated that our colleagues need to filter the
-                mega-menu after typing a keyword to complete their JTBDs, but
-                providing search suggestions was not necessary
+                Task-analysis validated that our colleagues only need to filter
+                our menus after typing a keyword, but providing additional
+                search suggestions was not necessary
               </p>
             </li>
           </ul>
@@ -117,36 +132,35 @@
         <img src="assets/searchable/task-analysis.png" />
         <section>
           <div class="text-group">
-            <h2>Defining searchable dropdown behaviour</h2>
+            <h2>Defining searchable select menu interactions</h2>
             <p class="emphasized">
-              I used searchable dropdown best practices, but adapted for
-              internal tools
+              Using best practices and speaking to our colleagues
             </p>
           </div>
           <div class="text-group">
-            <h3>The height of the dropdown menu is flexible</h3>
+            <h3>The height of the select menu is flexible</h3>
             <ul>
               <li>
                 <p>
                   I learned that ideally, colleagues want to see all menu items
                   immediately on focus: <i
                     >”If I immediately see the [item] I need to find in the
-                    menu, I can just click on it there”.</i
+                    menu, I can just click on it there”</i
                   >
                 </p>
               </li>
               <li>
                 <p>
                   If it is not possible to show all menu items, the menu can be
-                  set to a max. height
+                  set to a max. height for each use case
                 </p>
               </li>
             </ul>
           </div>
           <div class="text-group">
-            <h3>Dropdown items must be sorted alphabetically</h3>
+            <h3>Menu items must be sorted alphabetically</h3>
             <p>
-              The current experience listed segments in alphabetical order, and
+              The current experience listed items in alphabetical order, and
               this was validated by our colleagues to be a good experience –
               <i
                 >The [items] are listed in alphabetical order, which is helpful
@@ -155,20 +169,19 @@
             </p>
           </div>
           <div class="text-group">
-            <h3>Dropdown items must be parsable from anywhere</h3>
+            <h3>Menu items must be parsable from anywhere</h3>
             <p>
-              Dropdown items in our internal systems had legacy names with
-              prefixes that were unintuitive. Our colleagues should be able to
-              ignore prefixes upon search.
+              Menu items in our internal systems had legacy names with prefixes
+              that were unintuitive. Our colleagues should be able to ignore
+              prefixes upon search.
             </p>
           </div>
           <div class="text-group">
             <h3>Search cannot be case-sensitive</h3>
             <p>
-              Furthermore, dropdown items in our internal systems had legacy
-              names formatted in camelCase. Our colleagues should not have to
-              remember which characters in the target item are upper or
-              lowercase.
+              Furthermore, menu items in our internal systems had legacy names
+              formatted in camelCase. Our colleagues should not have to remember
+              which characters in the target item are upper or lowercase.
             </p>
           </div>
           <div class="text-group">
@@ -195,25 +208,26 @@
           </div>
           <div class="text-group">
             <h3>
-              There is more to search than an input field and a dropdown menu
+              There is more to search than slapping an input field and menu
+              together
             </h3>
             <p>
-              A searchable dropdown is composed of an input field and a dropdown
-              menu, but I also needed to consider how these two nested
-              components speak to one another. What is the height of the
-              dropdown menu? How should we handle case-sensitivity? Solutions
-              were found by thinking about how our colleagues work and validated
-              as feasible by the tech team.
+              The searchable select menu reused existing input field and menu
+              components, but I had to consider how these two components would
+              speak to each another. What is the height of the menu? How should
+              we handle case-sensitivity? Solutions were found by thinking about
+              how our colleagues work and validated as feasible by the tech
+              team.
             </p>
           </div>
           <div class="text-group">
-            <h3>Component design is not isolated from user-centred design</h3>
+            <h3>
+              A activity like this is not isolated from user-centred design
+            </h3>
             <p>
-              Intuitively, I think about component design as an exercise in
-              design systems thinking, visual design, and interaction design.
-              It’s less intuitive to imagine how user research has a role in
-              component design. However, task analysis was essential to
-              validating the search solution was effective.
+              It was less intuitive to foresee how user research had a role in
+              this activity. However, task analysis was essential to validating
+              the search solution was effective.
             </p>
           </div>
         </section>
