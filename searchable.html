@@ -59,147 +59,100 @@
         </section>
       </div>
       <div class="right">
-        <img src="assets/searchable/prototype.gif" />
-        <p class="emphasized">
-          During a 2 week sprint at Loblaw Digital, I defined searchable select
-          menu interactions for our internal Campaign Manager, reducing
-          production time and enabling the production of personalized campaigns
-          at scale. In one year, the difference in revenue between personalized
-          campaigns built in Campaign Manager and non-personalized campaigns was
-          +5.8M.
-        </p>
-        <div class="text-group">
-          <h2>My role</h2>
-          <p>
-            In January 2024, I joined the personalization team at Loblaw
-            Digital. Our team was responsible for our internal Campaign Manager,
-            a campaign management tool used by our colleagues to produce
-            personalized campaigns for 1M+ customers across Canada. When I
-            joined, Campaign Manager had just launched the previous month.
-          </p>
-        </div>
-        <div class="text-group">
-          <h2>Problem</h2>
-          <ul>
-            <li>
-              <p>
-                Because unique content must be created for every audience
-                segment, campaign personalization requires more content. Menus
-                on our interface connected to our content databases were
-                growing, and items became more and more difficult for colleagues
-                to find.
-              </p>
-            </li>
-            <li>
-              <p>
-                Personalized campaign production is repetitive – a unique
-                campaign is created for every audience segment – so our
-                colleagues interfaced with these long menus on a day-to-day.
-                Colleagues reported frustration because they had to repeatedly
-                find items buried within our long menus.
-              </p>
-            </li>
-            <li>
-              <p>
-                In order for personalized campaign production to scale, even
-                more content needs to be created, which means menus will only
-                get longer.
-              </p>
-            </li>
-          </ul>
-        </div>
-        <div class="text-group">
-          <h2>Solution</h2>
+        <section>
+          <img src="assets/searchable/prototype.gif" />
           <p class="emphasized">
-            Why was this an effective search solution for us?
+            During a 2 week sprint at Loblaw Digital, I defined searchable
+            select menu interactions for our internal Campaign Manager, reducing
+            production time and enabling the production of personalized
+            campaigns at scale. In one year, the difference in revenue between
+            personalized campaigns built in Campaign Manager and
+            non-personalized campaigns was +5.8M.
           </p>
-          <ul>
-            <li>
-              <p>
-                A searchable select menu was a lower effort alternative to
-                typeahead search
-              </p>
-            </li>
-            <li>
-              <p>
-                Task-analysis validated that our colleagues only need to filter
-                our menus after typing a keyword, but providing additional
-                search suggestions was not necessary
-              </p>
-            </li>
-          </ul>
-        </div>
-        <img src="assets/searchable/task-analysis.png" />
+        </section>
         <section>
           <div class="text-group">
-            <h2>Defining searchable select menu interactions</h2>
-            <p class="emphasized">
-              Using best practices and speaking to our colleagues
+            <h2>My role</h2>
+            <p>
+              In January 2024, I joined the personalization team at Loblaw
+              Digital. Our team was responsible for our internal Campaign
+              Manager, a campaign management tool used by our colleagues to
+              produce personalized campaigns for 1M+ customers across Canada.
+              When I joined, Campaign Manager had just launched.
             </p>
           </div>
+        </section>
+        <section>
           <div class="text-group">
-            <h3>The height of the select menu is flexible</h3>
+            <h2>Problem</h2>
             <ul>
               <li>
                 <p>
-                  I learned that ideally, colleagues want to see all menu items
-                  immediately on focus: <i
-                    >”If I immediately see the [item] I need to find in the
-                    menu, I can just click on it there”</i
-                  >
+                  Because unique content must be created for every audience
+                  segment, personalization requires more content creation. Menus
+                  on our interface connected to our content databases were
+                  growing, and items became more and more difficult for
+                  colleagues to find.
                 </p>
               </li>
               <li>
                 <p>
-                  If it is not possible to show all menu items, the menu can be
-                  set to a max. height for each use case
+                  Personalized campaign production is repetitive. Colleagues
+                  reported frustration because they had to repeatedly find items
+                  buried within long menus.
                 </p>
               </li>
             </ul>
           </div>
+        </section>
+        <section>
           <div class="text-group">
-            <h3>Menu items must be sorted alphabetically</h3>
+            <h2>Business impact</h2>
+            <p class="emphasized">Why was this problem important to solve?</p>
             <p>
-              The current experience listed items in alphabetical order, and
-              this was validated by our colleagues to be a good experience –
-              <i
-                >The [items] are listed in alphabetical order, which is helpful
-                in finding what we need right now”</i
-              >“
-            </p>
-          </div>
-          <div class="text-group">
-            <h3>Menu items must be parsable from anywhere</h3>
-            <p>
-              Menu items in our internal systems had legacy names with prefixes
-              that were unintuitive. Our colleagues should be able to ignore
-              prefixes upon search.
-            </p>
-          </div>
-          <div class="text-group">
-            <h3>Search cannot be case-sensitive</h3>
-            <p>
-              Furthermore, menu items in our internal systems had legacy names
-              formatted in camelCase. Our colleagues should not have to remember
-              which characters in the target item are upper or lowercase.
-            </p>
-          </div>
-          <div class="text-group">
-            <h3>Bold substrings of the result that match the user input</h3>
-            <p>
-              This is a best practice that provides the user with visual
-              feedback of their inputs.
+              In order for personalized campaign production to drive convergence
+              & revenue, it needs to scale. To scale successfully, menus in our
+              UI will only get longer. To increase colleague efficiency and
+              satisfaction, it was an important problem to solve at that point
+              in time.
             </p>
           </div>
         </section>
         <section>
-          <img src="assets/searchable/placement-1.gif" />
+          <div class="text-group">
+            <h2>Validating the solution</h2>
+            <p class="emphasized">
+              Why was this an effective search solution for us?
+            </p>
+            <ul>
+              <li>
+                <p>
+                  A searchable select menu was a lower effort alternative to
+                  typeahead search
+                </p>
+              </li>
+              <li>
+                <p>
+                  Task-analysis validated that our colleagues only need to
+                  filter our menus after typing a keyword, but providing
+                  additional search suggestions was not necessary
+                </p>
+              </li>
+            </ul>
+          </div>
+          <img src="assets/searchable/task-analysis.png" />
         </section>
         <section>
-          <img src="assets/searchable/placement-2.gif" />
-        </section>
-        <section>
-          <img src="assets/searchable/placement-3.gif" />
+          <div class="text-group">
+            <h2>Reusability</h2>
+            <p class="emphasized">
+              Once the search pattern was defined and built into our codebase,
+              it could be reused across the product.
+            </p>
+          </div>
+          <img src="assets/searchable/placement-1.png" />
+          <img src="assets/searchable/placement-2.png" />
+          <img src="assets/searchable/placement-3.png" />
         </section>
         <section>
           <div class="text-group">
@@ -208,16 +161,15 @@
           </div>
           <div class="text-group">
             <h3>
-              There is more to search than slapping an input field and menu
-              together
+              Search patterns for your product can differ from the search
+              patterns you know
             </h3>
             <p>
-              The searchable select menu reused existing input field and menu
-              components, but I had to consider how these two components would
-              speak to each another. What is the height of the menu? How should
-              we handle case-sensitivity? Solutions were found by thinking about
-              how our colleagues work and validated as feasible by the tech
-              team.
+              Search is something I interact with every day, but it had to be
+              considered in the context of our product. What is the max-height
+              of the menu? How should we handle case-sensitivity? Solutions were
+              found by thinking about how our colleagues work and feasability
+              had to be validated by the tech team.
             </p>
           </div>
           <div class="text-group">
