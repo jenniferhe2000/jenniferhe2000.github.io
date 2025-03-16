@@ -31,12 +31,13 @@ $spacers: (
   5: $spacer * 16,
 );
 
+$white: #ffffff;
 $gray-100: #f9f9f9;
 $gray-200: #f1f1f1;
 $gray-300: #eeeeee;
 $gray-400: #909090;
 $gray-900: #4f4f4f;
-$blue: #1500ff;
+$blue: #5d7bb2;
 
 $primary: $blue;
 
@@ -44,27 +45,58 @@ $primary: $blue;
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
-// global html elements
+// MOLECULES
 body {
   padding-top: 80px;
   padding-bottom: 80px;
   font-family: "Inter";
-  background-color: $gray-100;
-  cursor: none;
+  background-color: $white;
 }
 
-.left {
+.container {
   display: flex;
   flex-direction: column;
-  gap: map-get($spacers, 5);
-  margin-bottom: map-get($spacers, 5); // 32px
-  width: 284px;
+  gap: map-get($spacers, 5); // 32px between elements in a container
 }
 
-.right {
+.card {
+  padding: 16px;
+  background-color: $white;
+  border-radius: 8px;
+  border: 1px solid $gray-300;
   display: flex;
   flex-direction: column;
-  gap: map-get($spacers, 5); // 32px
+  gap: map-get($spacers, 4); // 16px between elements in a card
+}
+
+.header-group {
+  display: flex;
+  flex-direction: column;
+  gap: map-get($spacers, 4); // 16px between elements in a header group
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-group {
+  display: flex;
+  gap: map-get($spacers, 3); // 8px between elements in a button group
+}
+
+.text-group {
+  display: flex;
+  flex-direction: column;
+  gap: map-get($spacers, 2); // 8px
+}
+
+.link-group {
+  display: flex;
+  gap: map-get($spacers, 4); // 16px
+  padding-left: 0;
+  list-style: none;
+  margin: 0;
 }
 
 section {
@@ -73,52 +105,30 @@ section {
   gap: map-get($spacers, 4); // 16px
 }
 
+// ATOMS
+
+// DIVIDER
+.divider {
+  border-bottom: 1px solid $gray-300;
+}
+
+// IMAGE
 img {
   width: 100%;
+  border-radius: 8px;
 }
 
 img.hidden {
   display: none;
 }
 
-// CURSOR
-
-.cursor {
-  position: fixed;
-  z-index: 9999;
-  pointer-events: none;
+// LIST
+ul {
+  padding-left: 24px;
+  margin: 0;
 }
 
-.cursor-ball-sm,
-.cursor-ball-lg {
-  position: absolute;
-  border-radius: 50%;
-}
-
-.cursor-ball-sm {
-  width: 16px;
-  height: 16px;
-  background-color: rgba($blue, 0.6);
-}
-
-.cursor-ball-lg {
-  width: 32px;
-  height: 32px;
-  background-color: rgba($blue, 0.4);
-}
-
-// NAV
-
-nav ul {
-  display: flex;
-  flex-direction: column;
-  gap: map-get($spacers, 2); // 8px
-  padding: 0;
-  list-style: none;
-}
-
-// LINKS
-
+// LINK
 a {
   font-size: 14px;
   line-height: 22px;
@@ -132,15 +142,11 @@ a:hover {
   text-decoration: none;
 }
 
-a img {
-  vertical-align: text-bottom;
-}
-
-// TYPOGRAPHY
+// TEXT
 
 h1 {
   margin: 0;
-  font-size: 28px;
+  font-size: 24px;
   line-height: 32px;
   font-weight: 400;
   color: $gray-400;
@@ -173,12 +179,7 @@ p.emphasized {
   line-height: 24px;
 }
 
-ul {
-  margin: 0;
-  padding-left: 24px;
-}
-
-// ICON SIZES
+// ICON
 
 .icon-s {
   width: 16px;
@@ -195,18 +196,15 @@ ul {
   height: 32px;
 }
 
-// COMPOSITES
-
+// BUTTON
 button {
   font-family: "Inter";
-  font-size: 14px;
-  line-height: 22px;
+  font-size: 12px;
+  line-height: 16px;
   color: $gray-900;
   background-color: $white;
-  border-radius: 32px;
-  border-width: 1px;
-  border-color: $gray-300;
-  border-style: solid;
+  border-radius: 8px;
+  border: 1px solid $gray-300;
   padding: 8px 16px;
   align-self: start;
 }
@@ -217,37 +215,4 @@ button:hover {
 
 button.active {
   background-color: $gray-300;
-}
-
-.button-group {
-  display: flex;
-  gap: map-get($spacers, 2); // 8px
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-}
-
-.text-group {
-  display: flex;
-  flex-direction: column;
-  gap: map-get($spacers, 2); // 8px
-}
-
-// fix left side at md breakpoint
-@media (min-width: 768px) {
-  .left {
-    position: fixed;
-    top: 80px;
-    height: 100vh;
-    width: 284px;
-    z-index: 1000;
-  }
-}
-
-@media (min-width: 768px) {
-  .right {
-    margin-left: 400px;
-  }
 }

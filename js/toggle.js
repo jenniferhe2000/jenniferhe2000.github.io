@@ -1,6 +1,6 @@
 const gridToggle = document.querySelector(".toggle-grid");
 const listToggle = document.querySelector(".toggle-list");
-const thumbnails = document.querySelectorAll(".thumbnail");
+const thumbnails = document.querySelectorAll("img.thumbnail");
 
 // when clicked, if gridToggle not active:
 // add active class to gridToggle
@@ -21,6 +21,7 @@ gridToggle.addEventListener("click", () => {
 // remove active class from gridToggle
 // hide img in thumbnail
 listToggle.addEventListener("click", () => {
+  console.log("hello");
   if (!listToggle.classList.contains("active")) {
     console.log("hi");
     listToggle.classList.add("active");
