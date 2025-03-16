@@ -59,14 +59,10 @@ body {
   gap: map-get($spacers, 5); // 32px between elements in a container
 }
 
-.card {
-  padding: 16px;
-  background-color: $white;
-  border-radius: 8px;
-  border: 1px solid $gray-300;
+.tile-group {
   display: flex;
   flex-direction: column;
-  gap: map-get($spacers, 4); // 16px between elements in a card
+  gap: map-get($spacers, 5); // 32px between elements in a container
 }
 
 .header-group {
@@ -173,6 +169,12 @@ p.emphasized {
   line-height: 24px;
 }
 
+label {
+  font-family: "Inter";
+  font-size: 12px;
+  line-height: 16px;
+}
+
 // ICON
 
 .icon-s {
@@ -191,6 +193,7 @@ p.emphasized {
 }
 
 // BUTTON
+
 button {
   font-family: "Inter";
   font-size: 12px;
@@ -209,4 +212,56 @@ button:hover {
 
 button.active {
   background-color: $gray-300;
+}
+
+// SELECT
+
+.sort-container {
+  position: relative;
+  display: inline-block;
+}
+
+.sort-container::after {
+  content: "▾";
+  font-size: 12px;
+  line-height: 16px;
+  color: $gray-400;
+  position: absolute;
+  right: 16px;
+  top: 8px;
+  pointer-events: none;
+}
+
+select {
+  appearance: none; /* Remove default chevron */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-family: "Inter";
+  font-size: 12px;
+  line-height: 16px;
+  color: $gray-900;
+  background-color: $white;
+  border-radius: 8px;
+  border: 1px solid $gray-300;
+  padding: 8px 32px 8px 16px;
+}
+
+select:hover {
+  background-color: $gray-100;
+}
+
+select:focus {
+  outline: none;
+}
+
+// TILE
+
+.tile {
+  padding: 16px;
+  background-color: $white;
+  border-radius: 8px;
+  border: 1px solid $gray-300;
+  display: flex;
+  flex-direction: column;
+  gap: map-get($spacers, 4); // 16px between elements in a tile
 }

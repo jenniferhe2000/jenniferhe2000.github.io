@@ -11044,14 +11044,10 @@ body {
   gap: 32px;
 }
 
-.card {
-  padding: 16px;
-  background-color: #ffffff;
-  border-radius: 8px;
-  border: 1px solid #eeeeee;
+.tile-group {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 32px;
 }
 
 .header-group {
@@ -11150,6 +11146,12 @@ p.emphasized {
   line-height: 24px;
 }
 
+label {
+  font-family: "Inter";
+  font-size: 12px;
+  line-height: 16px;
+}
+
 .icon-s {
   width: 16px;
   height: 16px;
@@ -11183,4 +11185,52 @@ button:hover {
 
 button.active {
   background-color: #eeeeee;
+}
+
+.sort-container {
+  position: relative;
+  display: inline-block;
+}
+
+.sort-container::after {
+  content: "▾";
+  font-size: 12px;
+  line-height: 16px;
+  color: #909090;
+  position: absolute;
+  right: 16px;
+  top: 8px;
+  pointer-events: none;
+}
+
+select {
+  appearance: none; /* Remove default chevron */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-family: "Inter";
+  font-size: 12px;
+  line-height: 16px;
+  color: #4f4f4f;
+  background-color: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #eeeeee;
+  padding: 8px 32px 8px 16px;
+}
+
+select:hover {
+  background-color: #f9f9f9;
+}
+
+select:focus {
+  outline: none;
+}
+
+.tile {
+  padding: 16px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #eeeeee;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }/*# sourceMappingURL=main.css.map */

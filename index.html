@@ -57,10 +57,14 @@
       </div>
       <div class="row justify-content-center">
         <div class="col-12 col-md-6 auto-spacing-group">
-          <button type="button">
-            Most Relevant
-            <img class="icon-s ml-1" src="assets/icons/arrow-down.svg" />
-          </button>
+          <div class="sort-container">
+            <label for="sort-select" class="mr-1">Sort by:</label>
+            <select id="sort-select">
+              <option value="curated">Curated order</option>
+              <option value="newest">Newest first</option>
+              <option value="oldest">Oldest first</option>
+            </select>
+          </div>
           <div class="button-group">
             <button type="button" class="toggle-grid active">
               <img class="icon-s mr-1" src="assets/icons/grid.svg" />
@@ -75,91 +79,81 @@
       </div>
       <div class="row justify-content-center">
         <div class="col-12 col-md-6">
-          <div class="card">
-            <img src="assets/searchable/placement-3.png" class="thumbnail" />
-            <div class="text-group">
-              <h2>Loblaw Digital, 2024</h2>
-              <p>
-                Enabling efficient e-comm campaign production with searchable
-                select menus
-              </p>
+          <div class="tile-group">
+            <div class="tile" data-year="2024" data-order="1">
+              <img src="assets/searchable/placement-3.png" class="thumbnail" />
+              <div class="text-group">
+                <h2>Loblaw Digital, 2024</h2>
+                <p>
+                  Enabling efficient e-comm campaign production with searchable
+                  select menus
+                </p>
+              </div>
+              <a href="searchable.html">
+                <button type="button">
+                  <img class="icon-s mr-1" src="assets/icons/book.svg" />
+                  Read more
+                </button>
+              </a>
             </div>
-            <a href="searchable.html">
-              <button type="button">
-                <img class="icon-s mr-1" src="assets/icons/book.svg" />
-                Read more
+            <div class="tile" data-year="2022" data-order="2">
+              <img src="assets/shw/shw-table.png" class="thumbnail" />
+              <div class="text-group">
+                <h2>Schoolhouse, 2022</h2>
+                <p>
+                  Leading the 0-1 design of an online classroom tool to help
+                  teachers support students
+                </p>
+              </div>
+              <a href="schoolhouse.html">
+                <button type="button">
+                  <img class="icon-s mr-1" src="assets/icons/book.svg" />
+                  Read more
+                </button>
+              </a>
+            </div>
+            <div class="tile" data-year="2021" data-order="3">
+              <img src="assets/thinkdata/thumbnail.png" class="thumbnail" />
+              <div class="text-group">
+                <h2>ThinkData Works, 2021</h2>
+                <p>
+                  Reducing friction on source creation forms so data catalog
+                  users receive the most up-to-date and reliable data
+                </p>
+              </div>
+              <a href="thinkdata.html">
+                <button type="button">
+                  <img class="icon-s mr-1" src="assets/icons/book.svg" />
+                  Read more
+                </button>
+              </a>
+            </div>
+            <div class="tile" data-year="2025" data-order="4">
+              <img src="assets/ld-placeholder.png" class="thumbnail" />
+              <div class="text-group">
+                <h2>Loblaw Digital, 2025</h2>
+                <p>
+                  Designing a centralized accounts centre to give e-comm
+                  customers control of their personal information
+                </p>
+              </div>
+              <button type="button" class="active">
+                Case study in progress
               </button>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-12 col-md-6">
-          <div class="card">
-            <img src="assets/shw/shw-table.png" class="thumbnail" />
-            <div class="text-group">
-              <h2>Schoolhouse, 2022</h2>
-              <p>
-                Leading the 0-1 design of an online classroom tool to help
-                teachers support students
-              </p>
             </div>
-            <a href="schoolhouse.html">
-              <button type="button">
-                <img class="icon-s mr-1" src="assets/icons/book.svg" />
-                Read more
+            <div class="tile" data-year="2024" data-order="5">
+              <img src="assets/ld-placeholder.png" class="thumbnail" />
+              <div class="text-group">
+                <h2>Loblaw Digital, 2024</h2>
+                <p>
+                  Enabling granular personalization of email campaigns on tools
+                  for e-comm marketing teams
+                </p>
+              </div>
+              <button type="button" class="active">
+                Case study in progress
               </button>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-12 col-md-6">
-          <div class="card">
-            <img src="assets/thinkdata/thumbnail.png" class="thumbnail" />
-            <div class="text-group">
-              <h2>ThinkData Works, 2021</h2>
-              <p>
-                Reducing friction on source creation forms so data catalog users
-                receive the most up-to-date and reliable data
-              </p>
             </div>
-            <a href="thinkdata.html">
-              <button type="button">
-                <img class="icon-s mr-1" src="assets/icons/book.svg" />
-                Read more
-              </button>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-12 col-md-6">
-          <div class="card">
-            <img src="assets/ld-placeholder.png" class="thumbnail" />
-            <div class="text-group">
-              <h2>Loblaw Digital, 2025</h2>
-              <p>
-                Designing a centralized accounts centre to give e-comm customers
-                control of their personal information
-              </p>
-            </div>
-            <button type="button">Case study in progress</button>
-          </div>
-        </div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-12 col-md-6">
-          <div class="card">
-            <img src="assets/ld-placeholder.png" class="thumbnail" />
-            <div class="text-group">
-              <h2>Loblaw Digital, 2024</h2>
-              <p>
-                Enabling granular personalization of email campaigns on tools
-                for e-comm marketing teams
-              </p>
-            </div>
-            <button type="button">Case study in progress</button>
           </div>
         </div>
       </div>
@@ -201,5 +195,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js "></script>
     <script src="js/gsap.min.js"></script>
     <script src="js/toggle.js "></script>
+    <script src="js/sort.js "></script>
   </body>
 </html>
