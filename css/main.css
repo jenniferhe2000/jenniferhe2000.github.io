@@ -11084,12 +11084,6 @@ body {
   margin: 0;
 }
 
-section {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
 .divider {
   border-bottom: 1px solid #eeeeee;
 }
