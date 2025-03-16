@@ -75,7 +75,7 @@ body {
   gap: map-get($spacers, 4); // 16px between elements in a header group
 }
 
-.controls {
+.auto-spacing-group {
   display: flex;
   justify-content: space-between;
 }

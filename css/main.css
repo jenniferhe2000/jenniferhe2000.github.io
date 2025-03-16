@@ -11060,7 +11060,7 @@ body {
   gap: 16px;
 }
 
-.controls {
+.auto-spacing-group {
   display: flex;
   justify-content: space-between;
 }
